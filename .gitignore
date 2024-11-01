@@ -19,3 +19,11 @@ pnpm-debug.log*
 
 # macOS-specific files
 .DS_Store
+
+# Large media files
+*.webp
+*.jpg
+*.jpeg
+public/*.webp
+public/*.jpg
+public/*.jpeg
