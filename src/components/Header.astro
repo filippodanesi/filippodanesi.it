@@ -1,0 +1,18 @@
+---
+import siteConfig from '../data/site-config';
+---
+
+<header class="w-full max-w-3xl mx-auto mb-12 sm:mb-16 border-b border-solid border-main pb-4">
+    {
+        siteConfig.logo && siteConfig.logo?.src ? (
+            <a href="/">
+                <img src={siteConfig.logo.src} alt={siteConfig.logo.alt || ''} class="max-h-12" />
+            </a>
+        ) : (
+            <a class="font-serif text-3xl leading-tight font-medium text-theme-foreground sm:text-5xl" href="/">
+                {siteConfig.title}
+            </a>
+        )
+    }
+    {siteConfig.subtitle && <p class="text-s leading-tight mt-1">{siteConfig.subtitle}</p>}
+</header>

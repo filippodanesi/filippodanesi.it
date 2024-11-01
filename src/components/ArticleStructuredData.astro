@@ -1,0 +1,32 @@
+---
+import type { CollectionEntry } from 'astro:content';
+
+type Props = CollectionEntry<'blog'>['data'];
+
+const { title, excerpt: description, publishDate: createdAt, updatedDate: updatedAt, seo } = Astro.props as Props;
+
+const pageUrl = new URL(Astro.url.pathname, Astro.site);
+
+const structuredData = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: title,
+    description: description || seo?.description, // Fallback to SEO description if excerpt is missing
+    datePublished: createdAt.toISOString(),
+    dateModified: updatedAt?.toISOString() || createdAt.toISOString(),
+    url: pageUrl,
+    image: seo?.image
+        ? {
+              '@type': 'ImageObject',
+              url: seo.image.src,
+              caption: seo.image.alt
+          }
+        : undefined,
+    author: {
+        '@type': 'Person',
+        name: 'Filippo Danesi'
+    }
+};
+---
+
+<script type="application/ld+json" set:html={JSON.stringify(structuredData)} />

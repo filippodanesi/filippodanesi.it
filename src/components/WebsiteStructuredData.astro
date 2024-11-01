@@ -1,0 +1,14 @@
+---
+import siteConfig from '../data/site-config';
+
+const pageUrl = new URL(Astro.url.pathname, Astro.site);
+
+const structuredData = {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: siteConfig.title,
+    url: pageUrl
+};
+---
+
+<script type="application/ld+json" set:html={JSON.stringify(structuredData)} />
