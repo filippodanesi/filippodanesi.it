@@ -9,6 +9,14 @@ export default defineConfig({
   output: 'server',
   adapter: vercel({
     webAnalytics: { enabled: true },
+    imageService: true,
+    imagesConfig: { 
+      sizes: [640, 1280, 1920],
+      formats: ['webp', 'avif', 'jpg'],
+      domains: [],
+      minimumCacheTTL: 60,
+      quality: 80
+    },
     isr: { expiration: 60 * 60 * 24 },
   }),
   trailingSlash: 'always',
