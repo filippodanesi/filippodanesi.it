@@ -61,66 +61,56 @@
     height: auto;
 }
 
-@layer components {
-    /* Base button styles */
-    .cky-btn {
-      @apply rounded-full text-sm;
-    }
+.cky-btn {
+    @apply rounded-full text-sm;
+  }
   
-    /* Accept and reject buttons */
-    .cky-btn.cky-btn-accept,
-    .cky-btn.cky-btn-reject {
-      @apply border-0 text-main bg-main !important;
-    }
+  .cky-btn.cky-btn-accept,
+  .cky-btn.cky-btn-reject {
+    @apply border-0 text-main bg-main !important;
+  }
   
-    /* Customize and preferences buttons */
-    .cky-btn.cky-btn-customize,
-    .cky-btn.cky-btn-preferences {
-      @apply text-main bg-transparent border border-main/20 !important;
-    }
+  .cky-btn.cky-btn-customize,
+  .cky-btn.cky-btn-preferences {
+    @apply text-main bg-transparent border border-main/20 !important;
+  }
   
-    /* Common font family */
-    .cky-consent-container,
-    .cky-modal {
-      @apply font-sans !important;
-    }
+  .cky-consent-container,
+  .cky-modal {
+    @apply font-sans !important;
+  }
   
-    /* Modal specific styles */
-    .cky-modal {
-      @apply rounded-lg;
-    }
+  .cky-modal {
+    @apply rounded-lg;
+  }
   
-    /* Consent bar styles */
-    .cky-consent-bar {
-      @apply rounded-lg bg-main shadow-lg;
-    }
+  .cky-consent-bar {
+    @apply rounded-lg bg-main shadow-lg;
+  }
   
-    .cky-consent-bar .cky-banner-btn-close {
-      @apply top-3 right-3 mt-[5px] !important;
-    }
+  .cky-consent-bar .cky-banner-btn-close {
+    @apply top-3 right-3 mt-[5px] !important;
+  }
   
-    /* Banner elements and text styles */
-    .cky-banner-element,
-    .cky-btn.cky-btn-customize {
-      @apply inline-block px-4 py-2 text-main/60 bg-transparent 
-             border border-main/20 rounded-full no-underline cursor-pointer
-             transition-colors duration-150 ease-in-out;
-    }
+  .cky-banner-element,
+  .cky-btn.cky-btn-customize {
+    @apply inline-block px-4 py-2 text-main/60 bg-transparent 
+           border border-main/20 rounded-full no-underline cursor-pointer
+           transition-colors duration-150 ease-in-out;
+  }
   
-    .cky-banner-element:hover {
-      @apply text-main border-main/40;
-    }
+  .cky-banner-element:hover {
+    @apply text-main border-main/40;
+  }
   
-    /* Text styles */
-    .cky-title {
-      @apply text-base font-semibold text-main !important;
-    }
+  .cky-title {
+    @apply text-base font-semibold text-main !important;
+  }
   
-    .cky-notice-des p:last-child {
-      @apply text-sm text-main/60;
-    }
+  .cky-notice-des p:last-child {
+    @apply text-sm text-main/60;
+  }
   
-    .cky-policy {
-      @apply text-sm text-main !important;
-    }
+  .cky-policy {
+    @apply text-sm text-main !important;
   }
