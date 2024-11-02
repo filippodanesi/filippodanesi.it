@@ -7,15 +7,18 @@ import partytown from '@astrojs/partytown';
 export default defineConfig({
   site: 'https://www.serp-secrets.com',
   output: 'server',
+  adapter: vercel({
+    webAnalytics: { enabled: true },
+    imageService: true,
+    imagesConfig: { 
+      sizes: [320, 640, 1280],
+      domains: []
+    },
+    isr: { expiration: 60 * 60 * 24 },
+  }),
   trailingSlash: 'always',
   integrations: [
     sitemap(),
-    vercel({
-      webAnalytics: { enabled: true },
-      imageService: true,
-      imagesConfig: { sizes: [320, 640, 1280] },
-      isr: { expiration: 60 * 60 * 24 },
-    }),
     tailwind({ applyBaseStyles: false }),
     partytown({
       config: {
