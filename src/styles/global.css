@@ -49,6 +49,9 @@
     */
 }
 
+
+/* Custom styles */
+
 .prose-dante :where(h1, h2, h3, h4, h5, h6):not(:where([class~="not-prose"], [class~="not-prose"] *)) {
     font-family: "Newsreader", ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
     font-weight: 500;
@@ -67,7 +70,7 @@
   
   .cky-btn.cky-btn-accept,
   .cky-btn.cky-btn-reject {
-    @apply border-0 text-main bg-main !important;
+    @apply border-0 bg-[#171717] text-[#F2F1EC] dark:bg-[#F2F1EC] dark:text-[#171717] !important;
   }
   
   .cky-btn.cky-btn-customize,
@@ -104,13 +107,13 @@
   }
   
   .cky-title {
-    @apply text-base font-semibold text-main !important;
+    @apply text-base font-medium text-main !important;
   }
   
   .cky-notice-des p:last-child {
-    @apply text-sm text-main/60;
+    @apply text-xs text-main/60;
   }
   
   .cky-policy {
-    @apply text-sm text-main !important;
+    @apply text-xs text-main !important;
   }
