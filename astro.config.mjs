@@ -5,7 +5,7 @@ import tailwind from '@astrojs/tailwind';
 import partytown from '@astrojs/partytown';
 
 export default defineConfig({
-  site: 'https://serp-secrets-com.vercel.app',
+  site: 'https://www.serp-secrets.com',
   output: 'server',
   adapter: vercel({
     webAnalytics: { enabled: true },
