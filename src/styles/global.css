@@ -78,7 +78,7 @@
 
 .cky-btn.cky-btn-customize,
 .cky-btn.cky-btn-preferences {
-  @apply text-main bg-transparent border border-main/20 !important;
+  @apply text-main bg-transparent border border-main/20 dark:border-main/40 !important;
 }
 
 .cky-consent-container,
@@ -101,12 +101,13 @@
 .cky-banner-element,
 .cky-btn.cky-btn-customize {
   @apply inline-block px-4 py-2 text-main/60 bg-transparent 
-         border border-main/20 no-underline cursor-pointer
+         border border-main/20 dark:border-main/40
+         no-underline cursor-pointer
          transition-colors duration-150 ease-in-out !important;
 }
 
 .cky-banner-element:hover {
-  @apply text-main border-main/40 !important;
+  @apply text-main border-main/40 dark:border-main/60 !important;
 }
 
 .cky-title {
