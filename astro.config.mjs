@@ -16,7 +16,7 @@ export default defineConfig({
     },
     isr: { expiration: 60 * 60 * 24 },
   }),
-  trailingSlash: 'always',
+  trailingSlash: 'never',
   integrations: [
     sitemap(),
     tailwind({ applyBaseStyles: false }),
