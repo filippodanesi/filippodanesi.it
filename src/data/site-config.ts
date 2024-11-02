@@ -62,7 +62,7 @@ const siteConfig: SiteConfig = {
         },
         {
             text: 'Categories',
-            href: '/tags'
+            href: '/categories'
         },
         {
             text: 'About',
