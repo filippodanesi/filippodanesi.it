@@ -4,8 +4,6 @@ import sitemap from '@astrojs/sitemap';
 import tailwind from '@astrojs/tailwind';
 import partytown from '@astrojs/partytown';
 
-import robots from 'astro-robots';
-
 export default defineConfig({
   site: 'https://www.serp-secrets.com',
   output: 'server',
@@ -28,6 +26,5 @@ export default defineConfig({
         debug: false,
       },
     }),
-    robots(),
   ],
 });
