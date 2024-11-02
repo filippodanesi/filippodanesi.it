@@ -78,7 +78,8 @@
 
 .cky-btn.cky-btn-customize,
 .cky-btn.cky-btn-preferences {
-  @apply text-main bg-transparent border border-main/20 dark:border-main/40 !important;
+  @apply text-[#171717] dark:text-[#F2F1EC] bg-transparent 
+         border border-[#171717]/10 dark:border-[#F2F1EC]/10 !important;
 }
 
 .cky-consent-container,
@@ -100,24 +101,25 @@
 
 .cky-banner-element,
 .cky-btn.cky-btn-customize {
-  @apply inline-block px-4 py-2 text-main/60 bg-transparent 
-         border border-main/20 dark:border-main/40
+  @apply inline-block px-4 py-2 text-[#171717] dark:text-[#F2F1EC] bg-transparent 
+         border border-[#171717]/10 dark:border-[#F2F1EC]/10
          no-underline cursor-pointer
          transition-colors duration-150 ease-in-out !important;
 }
 
 .cky-banner-element:hover {
-  @apply text-main border-main/40 dark:border-main/60 !important;
+  @apply text-[#171717] dark:text-[#F2F1EC] 
+         border-[#171717]/20 dark:border-[#F2F1EC]/20 !important;
 }
 
 .cky-title {
-  @apply text-base font-medium text-main !important;
+  @apply text-base font-medium text-[#171717] dark:text-[#F2F1EC] !important;
 }
 
 .cky-notice-des p:last-child {
-  @apply text-xs text-main/60 !important;
+  @apply text-xs text-[#171717]/60 dark:text-[#F2F1EC]/60 !important;
 }
 
 .cky-policy {
-  @apply text-xs text-main !important;
+  @apply text-xs text-[#171717] dark:text-[#F2F1EC] !important;
 }
