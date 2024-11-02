@@ -1,0 +1,35 @@
+{
+	"version": 3,
+	"routes": [
+		{
+			"src": "^/_astro/(.*)$",
+			"headers": {
+				"cache-control": "public, max-age=31536000, immutable"
+			},
+			"continue": true
+		},
+		{
+			"handle": "filesystem"
+		},
+		{
+			"src": "^\\/_image$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/robots\\.txt\\/?$",
+			"dest": "/_isr?x_astro_path=$0"
+		},
+		{
+			"src": "^\\/rss\\.xml\\/?$",
+			"dest": "/_isr?x_astro_path=$0"
+		},
+		{
+			"src": "^\\/tags\\/?$",
+			"dest": "/_isr?x_astro_path=$0"
+		},
+		{
+			"src": "^\\/$",
+			"dest": "/_isr?x_astro_path=$0"
+		}
+	]
+}
