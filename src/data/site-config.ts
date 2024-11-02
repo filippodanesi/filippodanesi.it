@@ -91,7 +91,7 @@ const siteConfig: SiteConfig = {
         {
             text: 'Cookie Settings',
             href: '#',
-            className: 'cky-banner-element'
+            className: 'copy-url-button'
         }
     ],
     hero: {
