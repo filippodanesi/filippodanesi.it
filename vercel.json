@@ -1,3 +1,17 @@
 {
-    "trailingSlash": true
+    "trailingSlash": true,
+    "redirects": [
+        {
+            "source": "/:path+",
+            "has": [
+                {
+                    "type": "host",
+                    "value": "(?<host>.*)"
+                }
+            ],
+            "destination": "/:path+/",
+            "permanent": true,
+            "statusCode": 301
+        }
+    ]
 }
