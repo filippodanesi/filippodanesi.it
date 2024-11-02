@@ -12,7 +12,7 @@ export default defineConfig({
     imageService: true,
     imagesConfig: { 
       sizes: [640, 1280, 1920],
-      formats: ['webp', 'avif', 'jpg'],
+      formats: ['webp', 'jpg'],
       domains: [],
       minimumCacheTTL: 60,
       quality: 80
