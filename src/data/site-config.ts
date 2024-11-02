@@ -7,6 +7,7 @@ export type Image = {
 export type Link = {
     text: string;
     href: string;
+    className?: string;
 };
 
 export type Hero = {
@@ -86,7 +87,13 @@ const siteConfig: SiteConfig = {
             href: 'https://x.com/filippodanesi'
         }
     ],
-    socialLinks: [],
+    socialLinks: [
+        {
+            text: 'Cookie Settings',
+            href: '#',
+            className: 'cky-banner-element'
+        }
+    ],
     hero: {
         actions: []
     },
