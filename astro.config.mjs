@@ -12,7 +12,8 @@ export default defineConfig({
     imageService: true,
     imagesConfig: { 
       sizes: [320, 640, 1280],
-      domains: []
+      domains: [],
+      formats: ['webp', 'jpg', 'png', 'avif'],
     },
     isr: { expiration: 60 * 60 * 24 },
   }),
