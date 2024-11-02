@@ -8,7 +8,7 @@ export default defineConfig({
   site: 'https://www.serp-secrets.com',
   output: 'server',
   adapter: vercel({
-    webAnalytics: { enabled: true },
+    webAnalytics: { enabled: false },
     isr: { expiration: 60 * 60 * 24 },
   }),
   trailingSlash: 'always',

@@ -64,62 +64,113 @@
     height: auto;
 }
 
-.cky-btn,
-.cky-banner-element,
-.cky-btn-customize,
-.cky-btn-preferences {
+.cky-consent-container .cky-btn,
+.cky-consent-container .cky-banner-element,
+.cky-consent-container .cky-btn-customize,
+.cky-consent-container .cky-btn-preferences {
   @apply rounded-full text-sm !important;
+  background: none !important;
+  padding: 8px 16px !important;
+  color: #171717 !important;
 }
 
-.cky-btn.cky-btn-accept,
-.cky-btn.cky-btn-reject {
-  @apply border-0 bg-[#171717] text-[#F2F1EC] dark:bg-[#F2F1EC] dark:text-[#171717] !important;
+.cky-consent-container .cky-btn.cky-btn-accept,
+.cky-consent-container .cky-btn.cky-btn-reject {
+  background-color: #171717 !important;
+  color: #F2F1EC !important;
+  border: none !important;
 }
 
-.cky-btn.cky-btn-customize,
-.cky-btn.cky-btn-preferences {
-  @apply text-[#171717] dark:text-[#F2F1EC] bg-transparent 
-         border border-[#171717]/10 dark:border-[#F2F1EC]/10 !important;
+html.dark .cky-consent-container .cky-btn.cky-btn-accept,
+html.dark .cky-consent-container .cky-btn.cky-btn-reject {
+  background-color: #F2F1EC !important;
+  color: #171717 !important;
+}
+
+.cky-consent-container .cky-btn.cky-btn-customize,
+.cky-consent-container .cky-btn.cky-btn-preferences {
+  color: #171717 !important;
+  background: transparent !important;
+  border: 1px solid rgba(23, 23, 23, 0.1) !important;
+}
+
+html.dark .cky-consent-container .cky-btn.cky-btn-customize,
+html.dark .cky-consent-container .cky-btn.cky-btn-preferences {
+  color: #F2F1EC !important;
+  border-color: rgba(242, 241, 236, 0.1) !important;
 }
 
 .cky-consent-container,
-.cky-modal {
-  @apply font-sans !important;
+.cky-consent-container .cky-modal {
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, sans-serif !important;
 }
 
 .cky-modal {
-  @apply rounded-lg !important;
+  border-radius: 0.5rem !important;
 }
 
 .cky-consent-bar {
-  @apply rounded-lg bg-main shadow-lg !important;
+  border-radius: 0.5rem !important;
+  background-color: rgb(var(--color-bg-main)) !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) !important;
 }
 
 .cky-consent-bar .cky-banner-btn-close {
-  @apply top-3 right-3 mt-[5px] !important;
+  top: 0.75rem !important;
+  right: 0.75rem !important;
+  margin-top: 5px !important;
 }
 
 .cky-banner-element,
 .cky-btn.cky-btn-customize {
-  @apply inline-block px-4 py-2 text-[#171717] dark:text-[#F2F1EC] bg-transparent 
-         border border-[#171717]/10 dark:border-[#F2F1EC]/10
-         no-underline cursor-pointer
-         transition-colors duration-150 ease-in-out !important;
+  display: inline-block !important;
+  padding: 8px 16px !important;
+  color: #171717 !important;
+  background: transparent !important;
+  border: 1px solid rgba(23, 23, 23, 0.1) !important;
+  text-decoration: none !important;
+  cursor: pointer !important;
+  transition: all 150ms ease-in-out !important;
+}
+
+html.dark .cky-banner-element,
+html.dark .cky-btn.cky-btn-customize {
+  color: #F2F1EC !important;
+  border-color: rgba(242, 241, 236, 0.1) !important;
 }
 
 .cky-banner-element:hover {
-  @apply text-[#171717] dark:text-[#F2F1EC] 
-         border-[#171717]/20 dark:border-[#F2F1EC]/20 !important;
+  border-color: rgba(23, 23, 23, 0.2) !important;
 }
 
-.cky-title {
-  @apply text-base font-medium text-[#171717] dark:text-[#F2F1EC] !important;
+html.dark .cky-banner-element:hover {
+  border-color: rgba(242, 241, 236, 0.2) !important;
+}
+
+.cky-consent-container .cky-title {
+  font-size: 1rem !important;
+  font-weight: 500 !important;
+  color: #171717 !important;
+}
+
+html.dark .cky-consent-container .cky-title {
+  color: #F2F1EC !important;
 }
 
 .cky-notice-des p:last-child {
-  @apply text-xs text-[#171717]/60 dark:text-[#F2F1EC]/60 !important;
+  font-size: 0.75rem !important;
+  color: rgba(23, 23, 23, 0.6) !important;
+}
+
+html.dark .cky-notice-des p:last-child {
+  color: rgba(242, 241, 236, 0.6) !important;
 }
 
 .cky-policy {
-  @apply text-xs text-[#171717] dark:text-[#F2F1EC] !important;
+  font-size: 0.75rem !important;
+  color: #171717 !important;
+}
+
+html.dark .cky-policy {
+  color: #F2F1EC !important;
 }
