@@ -30,12 +30,6 @@ const { href } = Astro.url;
 const { post, prevPost, nextPost } = Astro.props;
 const { title, publishDate, updatedDate, excerpt, tags = [], seo } = post.data;
 const { Content } = await post.render();
-
-const breadcrumbLinks = [
-    { label: 'Home', url: '/', colorClass: 'text-neutral-900' },
-    { label: tags[0], url: `/tags/${slugify(tags[0])}`, colorClass: 'text-neutral-900' },
-    { label: title, colorClass: 'text-neutral-500' }
-];
 ---
 
 <BaseLayout title={seo?.title ?? title} description={seo?.description ?? excerpt} image={seo?.image} pageType="article" showHeader={false}>
@@ -50,7 +44,7 @@ const breadcrumbLinks = [
                         <>
                             <span class="mx-2 text-neutral-500">/</span>
                             <span>in</span>
-                            <a href={`/tags/${slugify(tags[0])}`} class="ml-1 text-main hover:underline">
+                            <a href={`/categories/${slugify(tags[0])}`} class="ml-1 text-main hover:underline">
                                 {tags[0]}
                             </a>
                         </>
@@ -101,9 +95,11 @@ const breadcrumbLinks = [
             await navigator.clipboard.writeText(url);
 
             button.innerText = 'Copied';
+            button.setAttribute('aria-label', 'Copied');
 
             setTimeout(() => {
                 button.innerText = label;
+                button.setAttribute('aria-label', 'Copy link');
             }, 2500);
         }
     });
