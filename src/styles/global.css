@@ -64,56 +64,59 @@
     height: auto;
 }
 
-.cky-btn {
-    @apply rounded-full text-sm;
-  }
-  
-  .cky-btn.cky-btn-accept,
-  .cky-btn.cky-btn-reject {
-    @apply border-0 bg-[#171717] text-[#F2F1EC] dark:bg-[#F2F1EC] dark:text-[#171717] !important;
-  }
-  
-  .cky-btn.cky-btn-customize,
-  .cky-btn.cky-btn-preferences {
-    @apply text-main bg-transparent border border-main/20 !important;
-  }
-  
-  .cky-consent-container,
-  .cky-modal {
-    @apply font-sans !important;
-  }
-  
-  .cky-modal {
-    @apply rounded-lg;
-  }
-  
-  .cky-consent-bar {
-    @apply rounded-lg bg-main shadow-lg;
-  }
-  
-  .cky-consent-bar .cky-banner-btn-close {
-    @apply top-3 right-3 mt-[5px] !important;
-  }
-  
-  .cky-banner-element,
-  .cky-btn.cky-btn-customize {
-    @apply inline-block px-4 py-2 text-main/60 bg-transparent 
-           border border-main/20 rounded-full no-underline cursor-pointer
-           transition-colors duration-150 ease-in-out;
-  }
-  
-  .cky-banner-element:hover {
-    @apply text-main border-main/40;
-  }
-  
-  .cky-title {
-    @apply text-base font-medium text-main !important;
-  }
-  
-  .cky-notice-des p:last-child {
-    @apply text-xs text-main/60;
-  }
-  
-  .cky-policy {
-    @apply text-xs text-main !important;
-  }
+.cky-btn,
+.cky-banner-element,
+.cky-btn-customize,
+.cky-btn-preferences {
+  @apply rounded-full text-sm !important;
+}
+
+.cky-btn.cky-btn-accept,
+.cky-btn.cky-btn-reject {
+  @apply border-0 bg-[#171717] text-[#F2F1EC] dark:bg-[#F2F1EC] dark:text-[#171717] !important;
+}
+
+.cky-btn.cky-btn-customize,
+.cky-btn.cky-btn-preferences {
+  @apply text-main bg-transparent border border-main/20 !important;
+}
+
+.cky-consent-container,
+.cky-modal {
+  @apply font-sans !important;
+}
+
+.cky-modal {
+  @apply rounded-lg !important;
+}
+
+.cky-consent-bar {
+  @apply rounded-lg bg-main shadow-lg !important;
+}
+
+.cky-consent-bar .cky-banner-btn-close {
+  @apply top-3 right-3 mt-[5px] !important;
+}
+
+.cky-banner-element,
+.cky-btn.cky-btn-customize {
+  @apply inline-block px-4 py-2 text-main/60 bg-transparent 
+         border border-main/20 no-underline cursor-pointer
+         transition-colors duration-150 ease-in-out !important;
+}
+
+.cky-banner-element:hover {
+  @apply text-main border-main/40 !important;
+}
+
+.cky-title {
+  @apply text-base font-medium text-main !important;
+}
+
+.cky-notice-des p:last-child {
+  @apply text-xs text-main/60 !important;
+}
+
+.cky-policy {
+  @apply text-xs text-main !important;
+}
