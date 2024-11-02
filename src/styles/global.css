@@ -60,3 +60,65 @@
     width: 100%;
     height: auto;
 }
+
+/* Base button styles */
+.cky-btn {
+    @apply rounded-full text-sm;
+}
+
+/* Accept and reject buttons */
+.cky-btn.cky-btn-accept,
+.cky-btn.cky-btn-reject {
+    @apply border-0 bg-primary text-white !important;
+}
+
+/* Customize and preferences buttons */
+.cky-btn.cky-btn-customize,
+.cky-btn.cky-btn-preferences {
+    @apply text-primary bg-transparent border border-gray-200 !important;
+}
+
+/* Common font family */
+.cky-consent-container,
+.cky-modal {
+    @apply font-sans !important;
+}
+
+/* Modal specific styles */
+.cky-modal {
+    @apply rounded-lg;
+}
+
+/* Consent bar styles */
+.cky-consent-bar {
+    @apply rounded-lg shadow-lg;
+}
+
+.cky-consent-bar .cky-banner-btn-close {
+    @apply top-3 right-3 mt-[5px] !important;
+}
+
+/* Banner elements and text styles */
+.cky-banner-element,
+.cky-btn.cky-btn-customize {
+    @apply inline-block px-4 py-2 text-gray-600 bg-transparent 
+           border border-gray-200 rounded-full no-underline cursor-pointer
+           transition-colors duration-150 ease-in-out;
+}
+
+.cky-banner-element:hover {
+    @apply text-primary border-gray-400;
+}
+
+/* Text styles */
+.cky-title {
+    @apply text-base font-semibold !important;
+}
+
+.cky-notice-des p:last-child {
+    @apply text-sm text-gray-500;
+}
+
+.cky-policy {
+    @apply text-sm text-primary !important;
+}
