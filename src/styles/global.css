@@ -79,7 +79,7 @@
 .cky-btn.cky-btn-customize,
 .cky-btn.cky-btn-preferences {
   @apply text-[#171717] bg-transparent 
-         border border-[#171717]/10 !important;
+         border border-[#171717] !important;
 }
 
 .cky-consent-container,
@@ -103,7 +103,7 @@
 .cky-banner-element,
 .cky-btn.cky-btn-customize {
   @apply inline-block px-4 py-2 text-[#171717] bg-transparent 
-         border border-[#171717]/10
+         border border-[#171717]
          no-underline cursor-pointer
          transition-colors duration-150 ease-in-out !important;
 }
