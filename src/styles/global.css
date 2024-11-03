@@ -117,7 +117,7 @@
 }
 
 .cky-notice-des p:last-child {
-  @apply text-xs text-[#171717]/60 !important;
+  @apply text-xs text-[#171717] !important;
 }
 
 .cky-policy {
