@@ -92,7 +92,8 @@
 }
 
 .cky-consent-bar {
-  @apply rounded-lg bg-main shadow-lg !important;
+  @apply rounded-lg shadow-lg !important;
+  background-color: #F2F1EC !important;
 }
 
 .cky-consent-bar .cky-banner-btn-close {
