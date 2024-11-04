@@ -8,14 +8,6 @@ seo:
     alt: A human with retrofuturistic gear in retro neon gradient
 ---
 
-import AboutPageStructuredData from '../components/AboutPageStructuredData.astro';
-
-<AboutPageStructuredData
-    title={frontmatter.title}
-    seo={frontmatter.seo}
-    slot="structured-data"
-/>
-
 ![Human with retrofuturistic gear in retro neon gradient](/about.jpeg)
 
 Hi, I’m Filippo, the mind behind SERPsecrets. As an SEO specialist and AI enthusiast, I’ve spent years helping businesses grow their online presence through innovative, data-driven strategies. Here, I combine my expertise in [Artificial Intelligence](https://www.serp-secrets.com/artificial-intelligence/) and SEO to bring you cutting-edge insights and solutions. This blog is your go-to resource for harnessing AI’s power to elevate your SEO game.

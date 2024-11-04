@@ -87,13 +87,7 @@ const siteConfig: SiteConfig = {
             href: 'https://x.com/filippodanesi'
         }
     ],
-    socialLinks: [
-        {
-            text: 'Cookie Settings',
-            href: '#',
-            className: 'copy-url-button'
-        }
-    ],
+    socialLinks: [],
     hero: {
         actions: []
     },
