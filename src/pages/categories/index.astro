@@ -29,9 +29,9 @@ const tags = getAllTags(posts).sort((tagA, tagB) => {
             return (
                 <a class="mb-10 flex justify-between items-start gap-8 group sm:mb-12" href={`/categories/${tag.slug}`}>
                     <div class="grow">
-                        <h2 class="text-xl leading-tight font-serif font-medium group-hover:underline group-hover:decoration-solid group-hover:underline-offset-4 group-hover:decoration-1 sm:text-2xl">
+                        <h3 class="text-xl leading-tight font-serif font-medium group-hover:underline group-hover:decoration-solid group-hover:underline-offset-4 group-hover:decoration-1 sm:text-2xl">
                             {tag.name}
-                        </h2>
+                        </h3>
                         <div class="mt-1 text-sm leading-normal">
                             {postCount} {postCount === 1 ? 'post' : 'posts'}
                         </div>

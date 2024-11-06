@@ -53,14 +53,36 @@ function formatCanonicalURL(url: string | URL) {
 />
 
 <!-- Google Analytics -->
-<script type="text/partytown" src="https://www.googletagmanager.com/gtag/js?id=G-MBR9G1TX79"></script>
-<script type="text/partytown">
+<!-- GA Script Tag -->
+<script 
+    type="text/plain"
+    data-category="analytics"
+    data-service="Google Analytics"
+    data-type="text/partytown"
+    src="https://www.googletagmanager.com/gtag/js?id=G-MBR9G1TX79">
+</script>
+
+<!-- GA Configuration -->
+<script 
+    type="text/plain"
+    data-category="analytics"
+    data-service="Google Analytics"
+    data-type="text/partytown">
     window.dataLayer = window.dataLayer || [];
     function gtag() {
         dataLayer.push(arguments);
     }
     gtag('js', new Date());
     gtag('config', 'G-MBR9G1TX79');
+</script>
+
+<!-- Cleanup script (optional) -->
+<script 
+    type="text/plain"
+    data-category="analytics"
+    data-service="!Google Analytics">
+    // Cleanup code when GA is disabled
+    window['ga-disable-G-MBR9G1TX79'] = true;
 </script>
 
 <!-- Low Priority Global Metadata -->
