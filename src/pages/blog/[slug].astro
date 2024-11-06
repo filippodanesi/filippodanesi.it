@@ -105,26 +105,31 @@ const { Content } = await post.render();
 </BaseLayout>
 
 <script>
-    document.addEventListener('astro:page-load', () => {
+    function setupCopyButton() {
         const copyUrlButton = document.querySelector('.copy-url-button') as HTMLButtonElement;
+        if (!copyUrlButton) return;
 
-        copyUrlButton?.addEventListener('click', async () => {
-            await copyUrl(copyUrlButton);
+        copyUrlButton.addEventListener('click', async () => {
+            const url = copyUrlButton.getAttribute('data-url') || window.location.href;
+            const defaultLabel = copyUrlButton.innerText;
+            
+            try {
+                await navigator.clipboard.writeText(url);
+                
+                copyUrlButton.innerText = copyUrlButton.getAttribute('data-tooltip-success') || 'Copied';
+                
+                setTimeout(() => {
+                    copyUrlButton.innerText = defaultLabel;
+                }, 2500);
+            } catch (err) {
+                console.error('Failed to copy:', err);
+            }
         });
+    }
 
-        async function copyUrl(button: HTMLButtonElement) {
-            let url = button.getAttribute('data-url') || '';
-            let label = button.innerText;
-
-            await navigator.clipboard.writeText(url);
-
-            button.innerText = 'Copied';
-            button.setAttribute('aria-label', 'Copied');
-
-            setTimeout(() => {
-                button.innerText = label;
-                button.setAttribute('aria-label', 'Copy link');
-            }, 2500);
-        }
-    });
+    // Setup on initial load
+    setupCopyButton();
+    
+    // Setup on subsequent navigations
+    document.addEventListener('astro:page-load', setupCopyButton);
 </script>
