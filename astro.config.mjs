@@ -1,12 +1,12 @@
 import { defineConfig } from 'astro/config';
-import vercel from '@astrojs/vercel/serverless';
+import vercel from '@astrojs/vercel/static';
 import sitemap from '@astrojs/sitemap';
 import tailwind from '@astrojs/tailwind';
 import partytown from '@astrojs/partytown';
 import jopSoftwarecookieconsent from '@jop-software/astro-cookieconsent';
 
 export default defineConfig({
- site: 'https://www.serp-secrets.com',
+ site: 'https://serp-secrets-com.vercel.app',
  output: 'server',
  adapter: vercel({
    webAnalytics: { enabled: false },
