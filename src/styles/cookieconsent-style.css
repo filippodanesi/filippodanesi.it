@@ -63,7 +63,7 @@ html.cc--darkmode #cc-main .section__toggle:checked~.toggle__icon {
     --cc-primary-color: #000;
     --cc-secondary-color: #252729;
 
-    --cc-btn-primary-bg: #000;
+    --cc-btn-primary-bg: #0a0a0a;
     --cc-btn-primary-color: #fff;
     --cc-btn-primary-hover-bg: #323232;
     --cc-btn-primary-hover-color: #fff;

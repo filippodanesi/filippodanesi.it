@@ -11,9 +11,9 @@ const { class: className } = Astro.props;
     subscribe?.formUrl && (
         <section class:list={['px-8 py-12 flex flex-col items-center border border-solid border-main text-center sm:px-12 sm:py-16', className]}>
             {subscribe.title && (
-                <h4 class:list={['w-full max-w-xl text-2xl leading-tight font-serif font-medium sm:text-4xl', subscribe.text ? 'mb-4' : 'mb-8']}>
+                <p class:list={['w-full max-w-xl text-2xl leading-tight font-serif font-medium sm:text-4xl', subscribe.text ? 'mb-4' : 'mb-8']}>
                     {subscribe.title}
-                </h4>
+                </p>
             )}
             {subscribe.text && <p class="w-full max-w-xl mb-8 text-sm leading-normal">{subscribe.text}</p>}
             <form
