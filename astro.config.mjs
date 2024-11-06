@@ -38,8 +38,8 @@ export default defineConfig({
 
      guiOptions: {
        consentModal: {
-         layout: "cloud inline",
-         position: "bottom center",
+         layout: "box inline",
+         position: "bottom left",
          equalWeightButtons: true,
          flipButtons: false
        },
