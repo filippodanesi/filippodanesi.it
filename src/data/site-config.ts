@@ -58,19 +58,19 @@ const siteConfig: SiteConfig = {
         },
         {
             text: 'Archive',
-            href: '/blog'
+            href: '/blog/'
         },
         {
             text: 'Categories',
-            href: '/categories'
+            href: '/categories/'
         },
         {
             text: 'About',
-            href: '/about'
+            href: '/about/'
         },
         {
             text: 'Contact',
-            href: '/contact'
+            href: '/contact/'
         }
     ],
     footerNavLinks: [

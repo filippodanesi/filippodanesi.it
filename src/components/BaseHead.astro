@@ -7,10 +7,20 @@ export type Props = {
     description?: string;
     image?: { src: string; alt?: string };
     pageType?: 'website' | 'article';
+    isHome?: boolean;  // aggiungi questa prop
 };
 
-const { description = '', image = siteConfig.image, pageType = 'website' } = Astro.props;
-const title = [Astro.props.title, siteConfig.title].filter(Boolean).join(' — ');
+const { 
+    description = '', 
+    image = siteConfig.image, 
+    pageType = 'website',
+    isHome = false  // default a false
+} = Astro.props;
+
+// Modifica la logica del titolo
+const title = isHome 
+    ? Astro.props.title 
+    : [Astro.props.title, siteConfig.title].filter(Boolean).join(' — ');
 const resolvedImage = image?.src
     ? {
           src: new URL(image.src, Astro.site).toString(),

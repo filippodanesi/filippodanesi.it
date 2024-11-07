@@ -10,7 +10,12 @@ import WebsiteStructuredData from '../components/WebsiteStructuredData.astro';
 const posts = (await getCollection('blog')).sort(sortItemsByDateDesc).slice(0, 5);
 ---
 
-<BaseLayout description={siteConfig.description} image={siteConfig.image}>
+<BaseLayout 
+    title="SERPsecrets — SEO Analysis, Strategies & AI Insights"
+    description={siteConfig.description} 
+    image={siteConfig.image}
+    isHome={true}
+>
     <WebsiteStructuredData slot="structured-data" />
     {
         posts.length > 0 && (
