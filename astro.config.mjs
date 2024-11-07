@@ -6,7 +6,7 @@ import partytown from '@astrojs/partytown';
 import jopSoftwarecookieconsent from '@jop-software/astro-cookieconsent';
 
 export default defineConfig({
-  site: 'https://serp-secrets-com.vercel.app',
+  site: 'https://www.serp-secrets.com',
   output: 'server',
   adapter: vercel({
     webAnalytics: { enabled: false },
