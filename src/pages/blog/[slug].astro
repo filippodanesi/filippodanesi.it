@@ -116,15 +116,10 @@ const { Content } = await post.render();
             try {
                 await navigator.clipboard.writeText(url);
                 
-                const newText = copyUrlButton.getAttribute('data-tooltip-success') || 'Copied';
-                copyUrlButton.innerText = newText;
-                // Aggiorna l'aria-label per mantenere la corrispondenza con il testo visibile
-                copyUrlButton.setAttribute('aria-label', newText);
+                copyUrlButton.innerText = copyUrlButton.getAttribute('data-tooltip-success') || 'Copied';
                 
                 setTimeout(() => {
                     copyUrlButton.innerText = defaultLabel;
-                    // Ripristina l'aria-label originale
-                    copyUrlButton.setAttribute('aria-label', defaultLabel);
                 }, 2500);
             } catch (err) {
                 console.error('Failed to copy:', err);
@@ -134,7 +129,7 @@ const { Content } = await post.render();
 
     // Setup on initial load
     setupCopyButton();
-
+    
     // Setup on subsequent navigations
     document.addEventListener('astro:page-load', setupCopyButton);
 </script>
