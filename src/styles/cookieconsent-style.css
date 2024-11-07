@@ -2,12 +2,12 @@
 html.cc--darkmode #cc-main {
     color-scheme: dark;
 
-    --cc-bg: #0a0a0a;
+    --cc-bg: #171717;
     --cc-primary-color: rgb(242, 241, 236);
     --cc-secondary-color: #F2F1EC;
 
     --cc-btn-primary-bg: #ffffff;
-    --cc-btn-primary-color: #000;
+    --cc-btn-primary-color: #171717;
     --cc-btn-primary-hover-bg: #ccd4d8;
     --cc-btn-primary-hover-color: #000;
 
@@ -60,10 +60,10 @@ html.cc--darkmode #cc-main .section__toggle:checked~.toggle__icon {
     color-scheme: light;
 
     --cc-bg: #F2F1EC;
-    --cc-primary-color: #000;
-    --cc-secondary-color: #252729;
+    --cc-primary-color: #171717;
+    --cc-secondary-color: #171717;
 
-    --cc-btn-primary-bg: #0a0a0a;
+    --cc-btn-primary-bg: #171717;
     --cc-btn-primary-color: #fff;
     --cc-btn-primary-hover-bg: #323232;
     --cc-btn-primary-hover-color: #fff;
