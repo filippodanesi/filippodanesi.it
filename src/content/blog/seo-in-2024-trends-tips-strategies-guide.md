@@ -6,11 +6,11 @@ tags:
   - SEO Strategies
 seo:
   image:
-    src: '/65d22bbce78d68be45ce2d31_seo-in-2024-trends-tips-strategies-guide-1.jpeg'
+    src: '/seo-in-2024-trends-tips-strategies-guide.jpeg'
     alt: "A blue abstract background with squares and cubes photo"
 ---
 
-![A blue abstract background with squares and cubes photo](/65d22bbce78d68be45ce2d31_seo-in-2024-trends-tips-strategies-guide-1.jpeg)
+![A blue abstract background with squares and cubes photo](/seo-in-2024-trends-tips-strategies-guide.jpeg)
 
 ## Introduction
 

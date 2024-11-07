@@ -6,11 +6,11 @@ tags:
   - Technical SEO
 seo:
   image:
-    src: '/65e1e3a231b62166c15aefb8_asset_2011-1.jpeg'
+    src: '/mastering-bert-in-seo-for-better-semantic-insight.jpeg'
     alt: "A blue and black object with a black background photo"
 ---
 
-![A blue and black object with a black background photo](/65e1e3a231b62166c15aefb8_asset_2011-1.jpeg)
+![A blue and black object with a black background photo](/mastering-bert-in-seo-for-better-semantic-insight.jpeg)
 
 ## Leveraging AI-driven Search Technologies and NLP for SEO Success
 

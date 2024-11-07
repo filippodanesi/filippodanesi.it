@@ -6,11 +6,11 @@ tags:
   - Artificial Intelligence
 seo:
   image:
-    src: '/65d22c3bb02225833a1bd3c6_ai-and-ml-what-are-the-differences-1.jpeg'
+    src: '/ai-and-ml-what-are-the-differences.jpeg'
     alt: "A blurry image of a pink and blue object photo"
 ---
 
-![A blurry image of a pink and blue object photo](/65d22c3bb02225833a1bd3c6_ai-and-ml-what-are-the-differences-1.jpeg)
+![A blurry image of a pink and blue object photo](/ai-and-ml-what-are-the-differences.jpeg)
 
 ## **Introduction**
 

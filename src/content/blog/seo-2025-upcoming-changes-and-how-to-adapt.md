@@ -10,7 +10,7 @@ seo:
     alt: "Green balloon on white surface photo"
 ---
 
-![Green balloon on white surface photo](/seo-2025-upcoming-changes-and-how-to-adapt-scaled.jpg)
+![Green balloon on white surface photo](/seo-2025-upcoming-changes-and-how-to-adapt.jpg)
 
 In the dynamic world of digital marketing, **Search Engine Optimization (SEO)** continues to be a fundamental pillar for online success. As we approach 2025, it's essential to **anticipate upcoming changes** and prepare to adapt our SEO strategies. In this article, we'll explore emerging trends and best practices that will shape the future of SEO, offering a comprehensive overview of what lies ahead and how we can best prepare.
 

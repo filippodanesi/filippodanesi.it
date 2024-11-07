@@ -6,11 +6,11 @@ tags:
   - Technical SEO
 seo:
   image:
-    src: '/661c0442665efc57403a4677_alyx-PQghmhag2cg-unsplash-scaled-1.jpeg'
+    src: '/advanced-strategies-for-schema-markup-optimization.jpeg'
     alt: "A multicolored cube of glass on a white background photo"
 ---
 
-![A multicolored cube of glass on a white background photo](/661c0442665efc57403a4677_alyx-PQghmhag2cg-unsplash-scaled-1.jpeg)
+![A multicolored cube of glass on a white background photo](/advanced-strategies-for-schema-markup-optimization.jpeg)
 
 ## Introduction
 

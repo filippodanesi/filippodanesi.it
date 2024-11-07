@@ -6,11 +6,11 @@ tags:
   - SEO Strategies
 seo:
   image:
-    src: '/65d22c2e43a1dbe0f9f5f09d_how-to-use-ai-in-seo-forecasting-1.jpeg'
+    src: '/how-to-use-ai-in-seo-forecasting.jpeg'
     alt: "A blurry image of a white circle photo"
 ---
 
-![A blurry image of a white circle photo](/65d22c2e43a1dbe0f9f5f09d_how-to-use-ai-in-seo-forecasting-1.jpeg)
+![A blurry image of a white circle photo](/how-to-use-ai-in-seo-forecasting.jpeg)
 
 ## Introduction
 

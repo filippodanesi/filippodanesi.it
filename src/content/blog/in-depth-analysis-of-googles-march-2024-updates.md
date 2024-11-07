@@ -6,11 +6,11 @@ tags:
   - SEO News
 seo:
   image:
-    src: '/664e4980b7818a167b13dff2_luke-jones-38Tm9xZPxIw-unsplash-1.jpeg'
+    src: '/in-depth-analysis-of-googles-march-2024-updates.jpeg'
     alt: "A group of different colored objects on a black background photo"
 ---
 
-![A group of different colored objects on a black background photo](/664e4980b7818a167b13dff2_luke-jones-38Tm9xZPxIw-unsplash-1.jpeg)
+![A group of different colored objects on a black background photo](/in-depth-analysis-of-googles-march-2024-updates.jpeg)
 
 ## In-Depth Analysis of Google's March 2024 Updates: Core Update and Spam Update
 

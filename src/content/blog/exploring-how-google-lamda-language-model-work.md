@@ -6,11 +6,11 @@ tags:
   - Artificial Intelligence
 seo:
   image:
-    src: '/65d22c1f07da4cc1361b2ec2_exploring-how-google-lamda-language-model-work-1.webp'
+    src: '/exploring-how-google-lamda-language-model-work.webp'
     alt: "Pink green and blue abstract painting photo"
 ---
 
-![Pink green and blue abstract painting photo](/65d22c1f07da4cc1361b2ec2_exploring-how-google-lamda-language-model-work-1.webp)
+![Pink green and blue abstract painting photo](/exploring-how-google-lamda-language-model-work.webp)
 
 ## Introduction
 

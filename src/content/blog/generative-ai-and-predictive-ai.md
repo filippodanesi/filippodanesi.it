@@ -6,11 +6,11 @@ tags:
   - Artificial Intelligence
 seo:
   image:
-    src: '/65d22c637dd9a48526a57e84_generative-ai-and-predictive-ai-1.jpeg'
+    src: '/generative-ai-and-predictive-ai.jpeg'
     alt: "Product Photography on Office Table Backdrop 3d Render"
 ---
 
-![Product Photography on Office Table Backdrop 3d Render](/65d22c637dd9a48526a57e84_generative-ai-and-predictive-ai-1.jpeg)
+![Product Photography on Office Table Backdrop 3d Render](/generative-ai-and-predictive-ai.jpeg)
 ## Introduction
 
 In the era of the fourth industrial revolution, artificial intelligence (AI) has made **great strides**, developing in different yet complementary directions: generative AI and predictive AI. These two emerging fields of AI are **shaping the future of technological innovation** and our understanding of the ability of machines to emulate and even **surpass certain human cognitive functions**.

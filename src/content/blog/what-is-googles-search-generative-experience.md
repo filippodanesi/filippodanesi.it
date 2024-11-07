@@ -6,11 +6,11 @@ tags:
   - SEO News
 seo:
   image:
-    src: '/65d22baa960ab49fbbb55536_what-is-googles-search-generative-experience-1.jpeg'
+    src: '/what-is-googles-search-generative-experience.jpeg'
     alt: "A green spiral staircase with a white ball in it photo"
 ---
 
-![A green spiral staircase with a white ball in it photo](/65d22baa960ab49fbbb55536_what-is-googles-search-generative-experience-1.jpeg)
+![A green spiral staircase with a white ball in it photo](/what-is-googles-search-generative-experience.jpeg)
 
 ## Introduction to the Search Generative Experience
 

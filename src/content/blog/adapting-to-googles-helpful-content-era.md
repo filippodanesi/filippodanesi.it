@@ -7,11 +7,11 @@ tags:
   - SEO Strategies
 seo:
   image:
-    src: '/65ec2174493307e88c5d3f75_shubham-dhage-50GSjnC7qXw-unsplash-scaled-1.jpeg'
+    src: '/adapting-to-googles-helpful-content-era.jpeg'
     alt: abstract 3d illustration with abstract light scattering on it
 ---
 
-![abstract 3d illustration with abstract light scattering on it](/65ec2174493307e88c5d3f75_shubham-dhage-50GSjnC7qXw-unsplash-scaled-1.jpeg)
+![abstract 3d illustration with abstract light scattering on it](/adapting-to-googles-helpful-content-era.jpeg)
 
 ## Introduction
 

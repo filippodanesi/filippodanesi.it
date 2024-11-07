@@ -6,11 +6,11 @@ tags:
   - Artificial Intelligence
 seo:
   image:
-    src: '/65d22b973468e1a2dfa9353a_will-artificial-intelligence-replace-humans-1.jpeg'
+    src: '/will-artificial-intelligence-replace-humans.jpeg'
     alt: "A very large group of blue and white objects photo"
 ---
 
-![A very large group of blue and white objects photo](/65d22b973468e1a2dfa9353a_will-artificial-intelligence-replace-humans-1.jpeg)
+![A very large group of blue and white objects photo](/will-artificial-intelligence-replace-humans.jpeg)
 
 ## Introduction
 

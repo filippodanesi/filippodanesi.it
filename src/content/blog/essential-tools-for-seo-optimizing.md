@@ -6,11 +6,11 @@ tags:
   - SEO Strategies
 seo:
   image:
-    src: '/65d22c57981519f7edb5544f_essential-tools-for-seo-optimizing-1.jpeg'
+    src: '/essential-tools-for-seo-optimizing.jpeg'
     alt: "A blurry photo of a bunch of curved lines photo"
 ---
 
-![A blurry photo of a bunch of curved lines photo](/65d22c57981519f7edb5544f_essential-tools-for-seo-optimizing-1.jpeg)
+![A blurry photo of a bunch of curved lines photo](/essential-tools-for-seo-optimizing.jpeg)
 
 ## Introduction
 

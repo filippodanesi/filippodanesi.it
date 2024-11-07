@@ -6,11 +6,11 @@ tags:
   - Technical SEO
 seo:
   image:
-    src: '/65d22bec6aa58491e821eb32_understanding-shadow-dom-for-a-optimized-indexing-1.jpeg'
+    src: '/understanding-shadow-dom-for-a-optimized-indexing.jpeg'
     alt: "An artist’s illustration of artificial intelligence (AI) representing how technology can help humans learn and predict patterns in biology, created by Khyati Trehan as part of the Visualising AI project by Google DeepMind."
 ---
 
-![An artist’s illustration of artificial intelligence (AI) representing how technology can help humans learn and predict patterns in biology, created by Khyati Trehan as part of the Visualising AI project by Google DeepMind.](/65d22bec6aa58491e821eb32_understanding-shadow-dom-for-a-optimized-indexing-1.jpeg)
+![An artist’s illustration of artificial intelligence (AI) representing how technology can help humans learn and predict patterns in biology, created by Khyati Trehan as part of the Visualising AI project by Google DeepMind.](/understanding-shadow-dom-for-a-optimized-indexing.jpeg)
 
 ## A Practical Guide for Working with Web Components and JavaScript Frameworks
 

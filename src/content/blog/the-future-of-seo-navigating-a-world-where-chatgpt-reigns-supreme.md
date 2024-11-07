@@ -6,11 +6,11 @@ tags:
   - SEO News
 seo:
   image:
-    src: '/65d22bda76d61ba2f8bcf7b3_the-future-of-seo-navigating-a-world-where-chatgpt-reigns-supreme-1.jpeg'
+    src: '/the-future-of-seo-navigating-a-world-where-chatgpt-reigns-supreme.jpeg'
     alt: "Product Photography on Office Table Backdrop 3d Render"
 ---
 
-![Product Photography on Office Table Backdrop 3d Render](/65d22bda76d61ba2f8bcf7b3_the-future-of-seo-navigating-a-world-where-chatgpt-reigns-supreme-1.jpeg)
+![Product Photography on Office Table Backdrop 3d Render](/the-future-of-seo-navigating-a-world-where-chatgpt-reigns-supreme.jpeg)
 
 ## Introduction
 

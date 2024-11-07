@@ -6,11 +6,11 @@ tags:
   - SEO Strategies
 seo:
   image:
-    src: '/65d22c0107da4cc1361b1993_optimizing-content-for-google-search-generative-experience-1.jpeg'
+    src: '/optimizing-content-for-google-search-generative-experience.jpeg'
     alt: "An artist's illustration of artificial intelligence (AI) visualizing the flow of information within large language models, created by Tim West as part of the Visualising AI project by Google DeepMind."
 ---
 
-![An artist's illustration of artificial intelligence (AI) visualizing the flow of information within large language models, created by Tim West as part of the Visualising AI project by Google DeepMind.](/65d22c0107da4cc1361b1993_optimizing-content-for-google-search-generative-experience-1.jpeg)
+![An artist's illustration of artificial intelligence (AI) visualizing the flow of information within large language models, created by Tim West as part of the Visualising AI project by Google DeepMind.](/optimizing-content-for-google-search-generative-experience.jpeg)
 
 ## Navigating the AI Revolution in SEO and Content Creation
 

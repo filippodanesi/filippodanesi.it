@@ -6,11 +6,11 @@ tags:
   - SEO Strategies
 seo:
   image:
-    src: '/65d22c108b721fc8e21c4056_how-to-use-lsi-keywords-in-seo-1.jpeg'
+    src: '/how-to-use-lsi-keywords-in-seo.jpeg'
     alt: "Blue and white round illustration photo"
 ---
 
-![Blue and white round illustration photo](/65d22c108b721fc8e21c4056_how-to-use-lsi-keywords-in-seo-1.jpeg)
+![Blue and white round illustration photo](/how-to-use-lsi-keywords-in-seo.jpeg)
 
 ## Introduction to LSI Keywords
 
