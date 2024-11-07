@@ -4,12 +4,12 @@ seo:
   title: About Me
   description: Learn more about the person behind the website and embark on a journey of inspiration and shared experiences.
   image:
-    src: '/about.jpeg'
+    src: '/about.webp'
     alt: A human with retrofuturistic gear in retro neon gradient
 ---
 
 <figure>
-  <img src="/about.jpeg" alt="Human with retrofuturistic gear in retro neon gradient">
+  <img src="/about.webp" alt="Human with retrofuturistic gear in retro neon gradient">
   <figcaption>Photo by <a href="https://unsplash.com/@alexshuperart?utm_content=creditCopyText&amp;utm_medium=referral&amp;utm_source=unsplash">Alex Shuper</a> on <a href="https://unsplash.com/photos/a-picture-of-a-woman-with-a-dumbbell-in-her-hand-l2nJZnXxkx4?utm_content=creditCopyText&amp;utm_medium=referral&amp;utm_source=unsplash">Unsplash</a></figcaption>
 </figure>
 
