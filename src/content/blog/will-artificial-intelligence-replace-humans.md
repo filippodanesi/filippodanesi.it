@@ -10,9 +10,10 @@ seo:
     alt: "A very large group of blue and white objects photo"
 ---
 
-![A very large group of blue and white objects photo](/will-artificial-intelligence-replace-humans.jpeg)
-
-## Introduction
+<figure>
+  <img src="/will-artificial-intelligence-replace-humans.jpeg" alt="A very large group of blue and white objects photo">
+  <figcaption>Photo by <a href="https://unsplash.com/@rick_rothenberg?utm_content=creditCopyText&amp;utm_medium=referral&amp;utm_source=unsplash">Rick Rothenberg</a> on <a href="https://unsplash.com/photos/a-very-large-group-of-blue-and-white-objects-EnlVYvzwY3Y?utm_content=creditCopyText&amp;utm_medium=referral&amp;utm_source=unsplash">Unsplash</a></figcaption>
+</figure>
 
 There is a question that pervades the collective imagination, enchanting science fiction writers and troubling scientists: **Will artificial intelligence replace humans?** This question fuels debates and spawns reflections. In this article, we try to untangle the web of fears, hopes, and questions surrounding this complex issue.
 

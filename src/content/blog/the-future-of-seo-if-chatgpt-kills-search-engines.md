@@ -10,9 +10,10 @@ seo:
     alt: "A blurry image of a square shaped object photo"
 ---
 
-![A blurry image of a square shaped object photo](/the-future-of-seo-if-chatgpt-kills-search-engines.jpeg)
-
-## Introduction
+<figure>
+  <img src="/the-future-of-seo-if-chatgpt-kills-search-engines.jpeg" alt="A blurry image of a square shaped object photo">
+  <figcaption>Photo by <a href="https://unsplash.com/@and_machines?utm_content=creditCopyText&amp;utm_medium=referral&amp;utm_source=unsplash">and machines</a> on <a href="https://unsplash.com/photos/a-blurry-image-of-a-square-shaped-object-p97L9-YwRFg?utm_content=creditCopyText&amp;utm_medium=referral&amp;utm_source=unsplash">Unsplash</a></figcaption>
+</figure>
 
 In the ever-evolving world of **digital marketing**, **Search Engine Optimization (SEO)** has remained a cornerstone, continuously adapting to the shifting sands of search engine algorithms and user behavior. Today, we stand at the precipice of another monumental shift, heralded by the rise of **Artificial Intelligence (AI)** technologies, particularly ChatGPT. This blog aims to unravel the potential future of SEO in a scenario where AI, like ChatGPT, overshadows traditional search engines, reshaping how we seek and interact with online information.
 
@@ -107,5 +108,3 @@ To thrive in this evolving landscape, marketers need to stay informed, be adapta
 The potential "end" of traditional search engines at the hands of AI technologies like ChatGPT marks a significant turning point in the realm of digital marketing and SEO. This evolution from keyword-focused strategies to optimizing for conversational AI demands a rethinking of how we create, optimize, and distribute content. The challenges are as real as the opportunities, calling for marketers to adapt to a landscape where AI shapes user interactions and content consumption.
 
 As we stand on the brink of this new era, the need for **adaptability**, **continuous learning**, and an **ethical approach** to AI in marketing has never been more crucial. Staying informed and willing to embrace change will be key for those looking to thrive in this AI-dominated future. The future of SEO in an AI-driven world is not just about understanding algorithms, but about crafting experiences that resonate on a human level, facilitated by the intelligence of machines.
-
-‍

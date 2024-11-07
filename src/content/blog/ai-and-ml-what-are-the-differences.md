@@ -10,9 +10,10 @@ seo:
     alt: "A blurry image of a pink and blue object photo"
 ---
 
-![A blurry image of a pink and blue object photo](/ai-and-ml-what-are-the-differences.jpeg)
-
-## **Introduction**
+<figure>
+  <img src="/ai-and-ml-what-are-the-differences.jpeg" alt="A blurry image of a pink and blue object photo">
+  <figcaption>Photo by <a href="https://unsplash.com/@fakurian?utm_content=creditCopyText&amp;utm_medium=referral&amp;utm_source=unsplash">Milad Fakurian</a> on <a href="https://unsplash.com/photos/a-blurry-image-of-a-pink-and-blue-object-tUF--C9oOuE?utm_content=creditCopyText&amp;utm_medium=referral&amp;utm_source=unsplash">Unsplash</a></figcaption>
+</figure>
 
 Digital innovations have led to the emergence of terms such as **Artificial Intelligence (AI)** and **Machine Learning (ML)**, often used interchangeably. This article aims to clearly and detailedly outline the **differences and interconnections between these two concepts.**
 

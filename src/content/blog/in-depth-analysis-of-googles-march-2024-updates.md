@@ -10,7 +10,10 @@ seo:
     alt: "A group of different colored objects on a black background photo"
 ---
 
-![A group of different colored objects on a black background photo](/in-depth-analysis-of-googles-march-2024-updates.jpeg)
+<figure>
+  <img src="/in-depth-analysis-of-googles-march-2024-updates.jpeg" alt="A group of different colored objects on a black background photo">
+  <figcaption>Foto di <a href="https://unsplash.com/it/@iamrohitchoudhari?utm_content=creditCopyText&amp;utm_medium=referral&amp;utm_source=unsplash">Rohit Choudhari</a> su <a href="https://unsplash.com/it/foto/x-nVoti8RKw?utm_content=creditCopyText&amp;utm_medium=referral&amp;utm_source=unsplash">Unsplash</a></figcaption>
+</figure>
 
 ## In-Depth Analysis of Google's March 2024 Updates: Core Update and Spam Update
 

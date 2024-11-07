@@ -10,9 +10,10 @@ seo:
     alt: "Blue and white round illustration photo"
 ---
 
-![Blue and white round illustration photo](/how-to-use-lsi-keywords-in-seo.jpeg)
-
-## Introduction to LSI Keywords
+<figure>
+  <img src="/how-to-use-lsi-keywords-in-seo.jpeg" alt="Blue and white round illustration photo">
+  <figcaption>Photo by <a href="https://unsplash.com/@sebastiansvenson?utm_content=creditCopyText&amp;utm_medium=referral&amp;utm_source=unsplash">Sebastian Svenson</a> on <a href="https://unsplash.com/photos/blue-and-white-round-illustration-LpbyDENbQQg?utm_content=creditCopyText&amp;utm_medium=referral&amp;utm_source=unsplash">Unsplash</a></figcaption>
+</figure>
 
 The **LSI (Latent Semantic Indexing) Keywords** are conceptually related terms that search engines use to deeply understand the content of a web page. The technology, originally patented in 1989, aims to use related words and phrases ("LSI keywords") to better categorize the topic of a page. Although the term "LSI Keywords" might be _technically inaccurate today_, it is still widely used in the SEO community.
 

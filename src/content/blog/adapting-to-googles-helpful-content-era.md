@@ -11,9 +11,10 @@ seo:
     alt: abstract 3d illustration with abstract light scattering on it
 ---
 
-![abstract 3d illustration with abstract light scattering on it](/adapting-to-googles-helpful-content-era.jpeg)
-
-## Introduction
+<figure>
+  <img src="/adapting-to-googles-helpful-content-era.jpeg" alt="abstract 3d illustration with abstract light scattering on it">
+  <figcaption>Photo by <a href="https://unsplash.com/@theshubhamdhage?utm_content=creditCopyText&amp;utm_medium=referral&amp;utm_source=unsplash">Shubham Dhage</a> on <a href="https://unsplash.com/photos/a-3d-image-of-a-box-with-a-lot-of-bubbles-coming-out-of-it-50GSjnC7qXw?utm_content=creditCopyText&amp;utm_medium=referral&amp;utm_source=unsplash">Unsplash</a></figcaption>
+</figure>
 
 In the past year, **Google's updates** have been numerous, each aiming to enhance the quality and relevance of search results for users. Among these, an update that garnered particular attention was the **Helpful Content Update** of September 2023. This update aimed to promote content that was genuinely useful to users, ensuring web pages were **evaluated based on their inherent usefulness** rather than manipulative SEO techniques. The impact of this update was vast and profound, with **many websites reporting drastic drops in traffic**. Google's message was clear: useful, reliable, and people-oriented content is crucial for good visibility in search results. This update emphasized the importance of **aligning SEO strategies with the goal of providing real value to users**, underscoring the necessity of authentic and transparent communication between websites and their visitors.
 

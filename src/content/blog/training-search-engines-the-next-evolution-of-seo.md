@@ -10,7 +10,10 @@ seo:
     alt: "A black background with a red and blue arrow photo"
 ---
 
-![A black background with a red and blue arrow photo](/training-search-engines-the-next-evolution-of-seo.jpg)
+<figure>
+  <img src="/training-search-engines-the-next-evolution-of-seo.jpg" alt="A black background with a red and blue arrow photo">
+  <figcaption>Photo by <a href="https://unsplash.com/@ricdeoliveira?utm_content=creditCopyText&amp;utm_medium=referral&amp;utm_source=unsplash">Ruan Richard Rodrigues</a> on <a href="https://unsplash.com/photos/a-black-background-with-a-red-and-blue-arrow-NjD3J4saktI?utm_content=creditCopyText&amp;utm_medium=referral&amp;utm_source=unsplash">Unsplash</a></figcaption>
+</figure>
 
 In the ever-evolving world of digital marketing, **Search Engine Optimization (SEO)** has long been the cornerstone of online visibility strategies. However, as we step into an era dominated by _artificial intelligence_ and _machine learning_, the traditional concept of "optimizing" for search engines is undergoing a profound transformation. Welcome to the age of **"training" search engines** – the next frontier in SEO.
 

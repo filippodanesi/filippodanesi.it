@@ -10,11 +10,10 @@ seo:
     alt: "A green spiral staircase with a white ball in it photo"
 ---
 
-![A green spiral staircase with a white ball in it photo](/what-is-googles-search-generative-experience.jpeg)
-
-## Introduction to the Search Generative Experience
-
-### The genesis of the SGE
+<figure>
+  <img src="/what-is-googles-search-generative-experience.jpeg" alt="A green spiral staircase with a white ball in it photo">
+  <figcaption>Photo by <a href="https://unsplash.com/@sunx?utm_content=creditCopyText&amp;utm_medium=referral&amp;utm_source=unsplash">Li Zhang</a> on <a href="https://unsplash.com/photos/a-green-spiral-staircase-with-a-white-ball-in-it-HYwU-Fl6IoM?utm_content=creditCopyText&amp;utm_medium=referral&amp;utm_source=unsplash">Unsplash</a></figcaption>
+</figure>
 
 Google introduced the **Search Generative Experience (SGE)**, a revolutionary innovation in the field of online search, which quickly captured the attention and acclaim of users. This platform, designed to drastically improve access to and understanding of information on the web, marked a **paradigm shift** in the way we interact with the vast universe of digital information.
 
@@ -53,5 +52,3 @@ Despite its revolutionary potential, the SGE also brings with it challenges. One
 ## Conclusion
 
 Google's SGE is much more than just a technological update; it's a step toward a future where access to and understanding of **information become increasingly intuitive and personalized**. As we continue to explore its capabilities and impact, we are moving towards a world where **knowledge is within reach**, accessible and understandable for everyone, regardless of background or expertise. In this context, the SGE is not just an achieved goal, but also a starting point for an exciting journey in the evolution of online search and learning.
-
-‍

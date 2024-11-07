@@ -10,9 +10,10 @@ seo:
     alt: "An artist’s illustration of artificial intelligence (AI) representing how technology can help humans learn and predict patterns in biology, created by Khyati Trehan as part of the Visualising AI project by Google DeepMind."
 ---
 
-![An artist’s illustration of artificial intelligence (AI) representing how technology can help humans learn and predict patterns in biology, created by Khyati Trehan as part of the Visualising AI project by Google DeepMind.](/understanding-shadow-dom-for-a-optimized-indexing.jpeg)
-
-## A Practical Guide for Working with Web Components and JavaScript Frameworks
+<figure>
+  <img src="/understanding-shadow-dom-for-a-optimized-indexing.jpeg" alt="An artist's illustration of artificial intelligence (AI) representing how technology can help humans learn and predict patterns in biology, created by Khyati Trehan as part of the Visualising AI project by Google DeepMind.">
+  <figcaption>Photo by <a href="https://unsplash.com/@googledeepmind?utm_content=creditCopyText&amp;utm_medium=referral&amp;utm_source=unsplash">Google DeepMind</a> on <a href="https://unsplash.com/photos/diagram-2EpKCoEgKZo?utm_content=creditCopyText&amp;utm_medium=referral&amp;utm_source=unsplash">Unsplash</a></figcaption>
+</figure>
 
 Web development has evolved significantly over the years, with the introduction of new technologies and frameworks. One such technology that has gained popularity is the **Shadow DOM**. In this practical guide, we will explore the Shadow DOM and its role in working with Web Components and JavaScript frameworks.
 
