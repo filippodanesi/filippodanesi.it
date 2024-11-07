@@ -7,10 +7,6 @@
             "permanent": true
         },
         {
-            "source": "/page/2",
-            "statusCode": 410
-        },
-        {
             "source": "/seo-strategies",
             "destination": "/categories/seo-strategies/",
             "permanent": true
