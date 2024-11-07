@@ -6,35 +6,6 @@ seo:
   image:
     src: '/about.webp'
     alt: A human with retrofuturistic gear in retro neon gradient
-
-structuredData: |-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Filippo Danesi",
-    "jobTitle": "Senior SEO Specialist",
-    "url": "https://www.filippodanesi.it",
-    "description": "Senior SEO Specialist leading advanced SEO strategies with AI-driven solutions, specializing in technical SEO and digital marketing optimization.",
-    "sameAs": [
-      "https://github.com/filippodanesi",
-      "https://twitter.com/filippodanesi",
-      "https://www.linkedin.com/in/filippodanesi"
-    ],
-    "worksFor": {
-      "@type": "Organization",
-      "name": "NUR Digital Marketing",
-      "location": {
-        "@type": "Place",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Pisa",
-          "addressCountry": "Italy"
-        }
-      }
-    }
-  }
-  </script>    
 ---
 
 <figure>
