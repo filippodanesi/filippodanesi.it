@@ -12,7 +12,6 @@
     "dependencies": {
         "@astrojs/internal-helpers": "^0.4.1",
         "@astrojs/mdx": "^2.2.4",
-        "@astrojs/partytown": "^2.1.2",
         "@astrojs/react": "^3.6.2",
         "@astrojs/rss": "^4.0.5",
         "@astrojs/sitemap": "^3.2.1",

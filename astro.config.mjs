@@ -2,7 +2,6 @@ import { defineConfig } from 'astro/config';
 import vercel from '@astrojs/vercel/serverless';
 import sitemap from '@astrojs/sitemap';
 import tailwind from '@astrojs/tailwind';
-import partytown from '@astrojs/partytown';
 import jopSoftwarecookieconsent from '@jop-software/astro-cookieconsent';
 
 export default defineConfig({
@@ -40,12 +39,6 @@ export default defineConfig({
   integrations: [
     sitemap(),
     tailwind({ applyBaseStyles: false }),
-    partytown({
-      config: {
-        forward: ['dataLayer.push'],
-        debug: false,
-      },
-    }),
     jopSoftwarecookieconsent({
       mode: 'opt-in',
       autoShow: true,
