@@ -59,7 +59,7 @@ html.cc--darkmode #cc-main .section__toggle:checked~.toggle__icon {
 #cc-main {
     color-scheme: light;
 
-    --cc-bg: #f8f8f5;
+    --cc-bg: #F2F1EC;
     --cc-primary-color: #000;
     --cc-secondary-color: #252729;
 
