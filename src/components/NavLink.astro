@@ -1,14 +1,21 @@
 ---
 import type { HTMLAttributes } from 'astro/types';
 
-type Props = HTMLAttributes<'a'>;
+type Props = HTMLAttributes<'a'> & { external?: boolean };
 
-const { href, class: className, ...props } = Astro.props;
+const { href, class: className, external, ...props } = Astro.props;
 
 const { pathname } = Astro.url;
 const isActive = href === pathname || href === pathname.replace(/\/$/, '');
+
+const externalProps = external ? { target: "_blank", rel: "noopener noreferrer" } : {};
 ---
 
-<a class:list={[className, { 'underline underline-offset-2 decoration-1': isActive }]} href={href} {...props}>
+<a 
+    class:list={[className, { 'underline underline-offset-2 decoration-1': isActive }]} 
+    href={href} 
+    {...externalProps}
+    {...props}
+>
     <slot />
 </a>
