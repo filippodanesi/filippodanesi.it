@@ -1,9 +1,10 @@
 ---
 import type { CollectionEntry } from 'astro:content';
+import siteConfig from '../config/site.config';
 
 type Props = CollectionEntry<'blog'>['data'];
 
-const { title, excerpt: description, publishDate: createdAt, updatedDate: updatedAt, seo } = Astro.props as Props;
+const { title, excerpt: description, publishDate: createdAt, updatedDate: updatedAt, seo, category } = Astro.props as Props;
 
 const pageUrl = new URL(Astro.url.pathname, Astro.site);
 
@@ -11,22 +12,70 @@ const structuredData = {
     '@context': 'https://schema.org',
     '@type': 'Article',
     headline: title,
-    description: description || seo?.description, // Fallback to SEO description if excerpt is missing
+    description: description || seo?.description || siteConfig.description,
     datePublished: createdAt.toISOString(),
-    dateModified: updatedAt?.toISOString() || createdAt.toISOString(),
-    url: pageUrl,
-    image: seo?.image
-        ? {
-              '@type': 'ImageObject',
-              url: seo.image.src,
-              caption: seo.image.alt
-          }
-        : undefined,
+    dateModified: updatedDate?.toISOString() || createdAt.toISOString(),
+    url: pageUrl.toString(),
+    mainEntityOfPage: {
+        '@type': 'WebPage',
+        '@id': pageUrl.toString()
+    },
+    image: (seo?.image || siteConfig.image) ? {
+        '@type': 'ImageObject',
+        url: seo?.image?.src || siteConfig.image?.src,
+        caption: seo?.image?.alt || siteConfig.image?.alt,
+    } : undefined,
     author: {
+        '@type': 'Person',
+        '@id': `${Astro.site}#identity`,
+        name: 'Filippo Danesi',
+        url: 'https://www.filippodanesi.it',
+        sameAs: [
+            'https://www.linkedin.com/in/filippodanesi/',
+            'https://github.com/filippodanesi/',
+            'https://x.com/filippodanesi'
+        ]
+    },
+    publisher: {
+        '@type': 'Organization',
+        name: siteConfig.title,
+        description: siteConfig.description,
+        logo: siteConfig.logo ? {
+            '@type': 'ImageObject',
+            url: siteConfig.logo.src,
+            caption: siteConfig.logo.alt
+        } : undefined
+    },
+    inLanguage: 'en', // o 'it' in base alla lingua dell'articolo
+    articleSection: category,
+    isAccessibleForFree: true,
+    copyrightYear: new Date(createdAt).getFullYear(),
+    copyrightHolder: {
         '@type': 'Person',
         name: 'Filippo Danesi'
     }
 };
+
+// Gestione delle keywords/tags
+if (seo?.keywords) {
+    structuredData.keywords = Array.isArray(seo.keywords) 
+        ? seo.keywords.join(', ') 
+        : seo.keywords;
+}
+
+// Se la categoria ha una descrizione nel config, aggiungiamola come about
+if (category && siteConfig.tagDescriptions[category]) {
+    structuredData.about = {
+        '@type': 'Thing',
+        name: category,
+        description: siteConfig.tagDescriptions[category]
+    };
+}
+
+// Se il siteConfig ha un subtitle, usiamolo come alternativeHeadline
+if (siteConfig.subtitle) {
+    structuredData.alternativeHeadline = siteConfig.subtitle;
+}
 ---
 
 <script type="application/ld+json" set:html={JSON.stringify(structuredData)} />
