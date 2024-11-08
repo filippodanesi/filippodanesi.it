@@ -1,0 +1,120 @@
+---
+// components/AboutSchema.astro
+const personStructuredData = {
+    '@context': 'https://schema.org',
+    '@type': 'AboutPage',
+    'mainEntity': {
+        '@type': 'Person',
+        '@id': `${Astro.site}#identity`,
+        name: 'Filippo Danesi',
+        jobTitle: 'Senior SEO Specialist',
+        url: 'https://www.filippodanesi.it',
+        email: 'filippo.danesi93@gmail.com',
+        telephone: '+39 392 241 8254',
+        description: 'Senior SEO Specialist with expertise in AI-driven solutions, technical SEO, and digital marketing strategies.',
+        knowsLanguage: [
+            {
+                '@type': 'Language',
+                name: 'Italian',
+                alternateName: 'it',
+                additionalProperty: 'Native speaker'
+            },
+            {
+                '@type': 'Language',
+                name: 'English',
+                alternateName: 'en',
+                additionalProperty: 'C1 Advanced'
+            }
+        ],
+        alumniOf: [
+            {
+                '@type': 'EducationalOrganization',
+                name: 'Fondazione Italia USA',
+                url: 'https://fondazioneitaliausa.org/',
+                degree: 'MASt in Global Marketing, Comunicazione e Made in Italy',
+                startDate: '2021',
+                endDate: '2022'
+            },
+            {
+                '@type': 'EducationalOrganization',
+                name: '24ORE Business School',
+                url: 'https://www.24orebs.com/',
+                degree: 'MASt in Big Data e Business Analytics',
+                startDate: '2021'
+            },
+            {
+                '@type': 'EducationalOrganization',
+                name: 'IED Istituto Europeo di Design',
+                url: 'https://www.ied.edu/',
+                degree: 'MASt in E-Commerce: Design and Management',
+                startDate: '2020',
+                endDate: '2021'
+            }
+        ],
+        hasCredential: [
+            {
+                '@type': 'EducationalOccupationalCredential',
+                name: 'Technical SEO Certification',
+                credentialCategory: 'Professional certification',
+                recognizedBy: {
+                    '@type': 'Organization',
+                    name: 'Blue Array Academy'
+                },
+                dateCreated: '2024'
+            },
+            {
+                '@type': 'EducationalOccupationalCredential',
+                name: 'CS50\'s AI with Python',
+                credentialCategory: 'Professional certification',
+                recognizedBy: {
+                    '@type': 'Organization',
+                    name: 'Harvard University'
+                },
+                dateCreated: '2024'
+            }
+        ],
+        hasOccupation: [
+            {
+                '@type': 'Occupation',
+                name: 'SEO Specialist (Tech Lead)',
+                occupationLocation: { '@type': 'City', name: 'Pisa' },
+                estimatedSalary: {
+                    '@type': 'MonetaryAmountDistribution',
+                    currency: 'EUR'
+                },
+                responsibilities: [
+                    'Lead and execute advanced SEO strategies',
+                    'Leverage AI-driven solutions',
+                    'Maximize online visibility and content performance',
+                    'Spearhead research initiatives',
+                    'Integrate cutting-edge AI applications'
+                ],
+                skills: [
+                    'HTML, CSS and JavaScript',
+                    'On-Page optimization',
+                    'Off-Page optimization',
+                    'Keyword analysis',
+                    'SEO tools',
+                    'AI tools',
+                    'CMS management',
+                    'JavaScript framework',
+                    'Data visualization',
+                    'Mobile SEO',
+                    'Data analytics tools'
+                ]
+            }
+        ],
+        workLocation: {
+            '@type': 'Place',
+            address: {
+                '@type': 'PostalAddress',
+                addressLocality: 'Pisa',
+                addressRegion: 'Tuscany',
+                addressCountry: 'IT'
+            }
+        }
+    }
+};
+---
+
+<script type="application/ld+json" set:html={JSON.stringify(personStructuredData)} />

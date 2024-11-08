@@ -4,11 +4,15 @@ import BaseHead, { type Props as HeadProps } from '../components/BaseHead.astro'
 import Footer from '../components/Footer.astro';
 import Header from '../components/Header.astro';
 import Nav from '../components/Nav.astro';
+import AboutStructuredData from '../components/AboutStructuredData.astro';
 import '../styles/cookieconsent-style.css';
 
 export type Props = HeadProps & { showHeader?: boolean };
 
 const { showHeader = true, ...head } = Astro.props;
+
+// Controlla se siamo nella pagina about
+const isAboutPage = Astro.url.pathname === '/about' || Astro.url.pathname === '/about/';
 ---
 
 <!doctype html>
@@ -16,6 +20,7 @@ const { showHeader = true, ...head } = Astro.props;
     <head>
         <BaseHead {...head} />
         <slot name="structured-data" />
+        {isAboutPage && <AboutStructuredData />}
         <script>
             if (localStorage.theme === 'dark') {
                 document.documentElement.classList.add('dark');
