@@ -8,13 +8,22 @@ const { title, excerpt, publishDate, updatedDate, image, tags, seo } = Astro.pro
 
 const pageUrl = new URL(Astro.url.pathname, Astro.site);
 
-// Funzione per determinare la sezione dell'articolo in base ai tag
 const getArticleSection = (tags: string[]) => {
     if (!tags.length) return 'Blog';
-    // Usa il primo tag come sezione principale
-    return siteConfig.tagDescriptions[tags[0]] 
-        ? tags[0].split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ')
-        : 'Blog';
+    
+    // Prendi il primo tag e gestisci il formato "SEO News"
+    const primaryTag = tags[0];
+    
+    // Se il tag è già in formato "SEO News", usalo direttamente
+    if (/^[A-Z]/.test(primaryTag)) {
+        return primaryTag;
+    }
+    
+    // Altrimenti, converti da "seo-news" a "SEO News"
+    return primaryTag
+        .split('-')
+        .map(word => word.toUpperCase())
+        .join(' ');
 };
 
 const structuredData = {
@@ -59,7 +68,7 @@ const structuredData = {
             caption: siteConfig.logo.alt
         } : undefined
     },
-    inLanguage: 'en', // o 'it' in base alla tua configurazione
+    inLanguage: 'en',
     keywords: tags.join(', '),
     articleSection: getArticleSection(tags),
     isAccessibleForFree: true,
@@ -71,12 +80,15 @@ const structuredData = {
 };
 
 // Aggiungi la descrizione del tag se disponibile
-if (tags.length && siteConfig.tagDescriptions[tags[0]]) {
-    structuredData.about = {
-        '@type': 'Thing',
-        name: getArticleSection(tags),
-        description: siteConfig.tagDescriptions[tags[0]]
-    };
+if (tags.length) {
+    const normalizedTag = tags[0].toLowerCase().replace(/\s+/g, '-');
+    if (siteConfig.tagDescriptions[normalizedTag]) {
+        structuredData.about = {
+            '@type': 'Thing',
+            name: getArticleSection(tags),
+            description: siteConfig.tagDescriptions[normalizedTag]
+        };
+    }
 }
 ---
 

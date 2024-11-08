@@ -1,5 +1,4 @@
 ---
-// components/AboutStructuredData.astro
 const personStructuredData = {
     '@context': 'https://schema.org',
     '@type': 'AboutPage',
@@ -11,7 +10,7 @@ const personStructuredData = {
     },
     'primaryImageOfPage': {
         '@type': 'ImageObject',
-        'url': 'https://www.filippodanesi.it/profile.webp'
+        'url': 'https://www.filippodanesi.it/images/profile.jpg'
     },
     'mainEntity': {
         '@type': 'Person',
@@ -44,37 +43,27 @@ const personStructuredData = {
         ],
         'alumniOf': [
             {
-                '@type': 'EducationalOrganization',
+                '@type': 'CollegeOrUniversity',
                 'name': 'Fondazione Italia USA',
                 'url': 'https://fondazioneitaliausa.org/',
-                'offers': {
-                    '@type': 'Course',
-                    'name': 'Global Marketing, Comunicazione e Made in Italy',
-                    'courseCode': 'MASt',
-                    'educationalCredentialAwarded': 'Master'
-                }
+                'programName': 'MASt in Global Marketing, Comunicazione e Made in Italy',
+                'yearStarted': '2021',
+                'yearCompleted': '2022'
             },
             {
-                '@type': 'EducationalOrganization',
+                '@type': 'CollegeOrUniversity',
                 'name': '24ORE Business School',
                 'url': 'https://www.24orebs.com/',
-                'offers': {
-                    '@type': 'Course',
-                    'name': 'Big Data e Business Analytics',
-                    'courseCode': 'MASt',
-                    'educationalCredentialAwarded': 'Master'
-                }
+                'programName': 'MASt in Big Data e Business Analytics',
+                'yearStarted': '2021'
             },
             {
-                '@type': 'EducationalOrganization',
+                '@type': 'CollegeOrUniversity',
                 'name': 'IED Istituto Europeo di Design',
                 'url': 'https://www.ied.edu/',
-                'offers': {
-                    '@type': 'Course',
-                    'name': 'E-Commerce: Design and Management',
-                    'courseCode': 'MASt',
-                    'educationalCredentialAwarded': 'Master'
-                }
+                'programName': 'MASt in E-Commerce: Design and Management',
+                'yearStarted': '2020',
+                'yearCompleted': '2021'
             }
         ],
         'hasCredential': [
@@ -136,15 +125,7 @@ const personStructuredData = {
                 'addressCountry': 'IT'
             }
         }
-    },
-    'about': {
-        '@type': 'Thing',
-        'name': 'SEO and Digital Marketing',
-        'description': 'Professional experience and expertise in SEO, Digital Marketing, and AI-driven solutions'
-    },
-    'datePublished': '2024-11-08', // Aggiorna con la data reale di pubblicazione
-    'dateModified': new Date().toISOString(),
-    'inLanguage': 'en'
+    }
 };
 ---
 
