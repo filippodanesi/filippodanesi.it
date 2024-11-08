@@ -1,52 +1,43 @@
 ---
-import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
+import BaseHead, { type Props as HeadProps } from '../components/BaseHead.astro';
 import Footer from '../components/Footer.astro';
-import siteConfig from '../data/site-config';
+import Header from '../components/Header.astro';
+import Nav from '../components/Nav.astro';
+import AboutStructuredData from '../components/AboutStructuredData.astro';
+import ContactPageStructuredData from '../components/ContactPageStructuredData.astro';
+import '../styles/cookieconsent-style.css';
 
-export interface Props {
-    title?: string;
-    description?: string;
-    image?: { src: string; alt: string };
-    pageType?: 'website' | 'article';
-    showHeader?: boolean;
-}
+export type Props = HeadProps & { showHeader?: boolean };
 
-const pathname = new URL(Astro.request.url).pathname;
-const isHome = pathname === '/';
+const { showHeader = true, ...head } = Astro.props;
 
-const {
-    title,
-    description = siteConfig.description,
-    image = siteConfig.image,
-    pageType = 'website',
-    showHeader = true
-} = Astro.props;
-
-// Use the full title only on homepage
-const pageTitle = isHome 
-    ? "Filippo Danesi — Search Engine Optimization Expert"
-    : title 
-        ? `${title} — Filippo Danesi` 
-        : siteConfig.title;
+const pathname = Astro.url.pathname;
+const isAboutPage = pathname === '/about' || pathname === '/about/';
+const isContactPage = pathname === '/contact' || pathname === '/contact/';
 ---
 
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en" class="antialiased break-words">
     <head>
-        <BaseHead 
-            title={pageTitle} 
-            description={description} 
-            image={image} 
-            pageType={pageType} 
-        />
-        <slot name="head" />
+        <BaseHead {...head} />
+        {isAboutPage && <AboutStructuredData />}
+        {isContactPage && <ContactPageStructuredData />}
+        <slot name="structured-data" />
+        <script>
+            if (localStorage.theme === 'dark') {
+                document.documentElement.classList.add('dark');
+                document.documentElement.classList.add('cc--darkmode');
+            }
+        </script>
     </head>
-    <body class="bg-[rgb(var(--color-bg-main))]">
-        {showHeader && <Header />}
-        <main class="mx-auto max-w-3xl px-4 py-12 sm:px-8 sm:py-20">
-            <slot />
-        </main>
-        <Footer />
+    <body class="bg-main text-main">
+        <div class="flex flex-col min-h-screen px-4 md:px-8">
+            <Nav />
+            {showHeader && <Header />}
+            <main class="grow w-full max-w-3xl mx-auto">
+                <slot />
+            </main>
+            <Footer />
+        </div>
     </body>
 </html>

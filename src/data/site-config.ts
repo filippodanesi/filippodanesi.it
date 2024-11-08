@@ -7,6 +7,7 @@ export type Image = {
 export type Link = {
     text: string;
     href: string;
+    external?: boolean;
     className?: string;
 };
 
@@ -51,7 +52,8 @@ const siteConfig: SiteConfig = {
     headerNavLinks: [
         {
             text: 'Blog',
-            href: '/blog'
+            href: 'https://www.serp-secrets.com/',
+            external: true
         },
         {
             text: 'Contact',
@@ -105,7 +107,8 @@ Committed to staying at the cutting edge of SEO trends and best practices, I'm f
             {
                 text: "Check out my CV",
                 href: "/Filippo-Danesi_Resume.pdf",
-                className: "download-cv"
+                className: "download-cv",
+                external: true
             },
             {
                 text: 'Visit my Blog',

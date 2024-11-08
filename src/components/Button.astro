@@ -1,8 +1,8 @@
 ---
 import type { HTMLAttributes } from 'astro/types';
 
-type AnchorProps = HTMLAttributes<'a'> & { type?: never };
-type ButtonProps = HTMLAttributes<'button'> & { href?: never };
+type AnchorProps = HTMLAttributes<'a'> & { type?: never; external?: boolean };
+type ButtonProps = HTMLAttributes<'button'> & { href?: never; external?: never };
 type Props = ButtonProps | AnchorProps;
 
 const { 
@@ -11,11 +11,14 @@ const {
   'data-url': dataUrl,
   'data-tooltip-default': tooltipDefault,
   'data-tooltip-success': tooltipSuccess,
+  external,
   ...rest 
 } = Astro.props;
 
 const buttonClasses = 
   'inline-flex items-center justify-center px-6 py-2 font-serif text-sm leading-tight italic text-main bg-main border border-main rounded-full transition hover:bg-muted';
+
+const externalProps = external ? { target: "_blank", rel: "noopener noreferrer" } : {};
 ---
 
 {
@@ -23,6 +26,7 @@ const buttonClasses =
     <a 
       href={href} 
       class:list={[buttonClasses, className]} 
+      {...externalProps}
       {...rest}
     >
       <slot />
