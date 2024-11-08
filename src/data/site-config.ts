@@ -41,7 +41,7 @@ export type SiteConfig = {
 };
 
 const siteConfig: SiteConfig = {
-    title: 'Filippo Danesi — Search Engine Optimization Expert',
+    title: 'Filippo Danesi',
     subtitle: 'Senior SEO Strategist & AI Innovation Specialist',
     description: 'SEO with over five years of experience in technical SEO and content strategy. Expertise in improving organic visibility and delivering data-driven results.',
     image: {
