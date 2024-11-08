@@ -44,22 +44,37 @@ const personStructuredData = {
         ],
         'alumniOf': [
             {
-                '@type': 'CollegeOrUniversity',
+                '@type': 'EducationalOrganization',
                 'name': 'Fondazione Italia USA',
                 'url': 'https://fondazioneitaliausa.org/',
-                'programName': 'MASt in Global Marketing, Comunicazione e Made in Italy'
+                'offers': {
+                    '@type': 'Course',
+                    'name': 'Global Marketing, Comunicazione e Made in Italy',
+                    'courseCode': 'MASt',
+                    'educationalCredentialAwarded': 'Master'
+                }
             },
             {
-                '@type': 'CollegeOrUniversity',
+                '@type': 'EducationalOrganization',
                 'name': '24ORE Business School',
                 'url': 'https://www.24orebs.com/',
-                'programName': 'MASt in Big Data e Business Analytics'
+                'offers': {
+                    '@type': 'Course',
+                    'name': 'Big Data e Business Analytics',
+                    'courseCode': 'MASt',
+                    'educationalCredentialAwarded': 'Master'
+                }
             },
             {
-                '@type': 'CollegeOrUniversity',
+                '@type': 'EducationalOrganization',
                 'name': 'IED Istituto Europeo di Design',
                 'url': 'https://www.ied.edu/',
-                'programName': 'MASt in E-Commerce: Design and Management'
+                'offers': {
+                    '@type': 'Course',
+                    'name': 'E-Commerce: Design and Management',
+                    'courseCode': 'MASt',
+                    'educationalCredentialAwarded': 'Master'
+                }
             }
         ],
         'hasCredential': [
