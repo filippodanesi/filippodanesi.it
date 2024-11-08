@@ -116,7 +116,8 @@ Committed to staying at the cutting edge of SEO trends and best practices, I'm f
             },
             {
                 text: 'Visit my Blog',
-                href: '/blog'
+                href: 'https://www.serp-secrets.com/',
+                external: true
             }
         ]
     },
