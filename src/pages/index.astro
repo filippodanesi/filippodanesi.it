@@ -1,33 +1,94 @@
 ---
-import { getCollection } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro';
+import Hero from '../components/Hero.astro';
 import Button from '../components/Button.astro';
-import PostPreview from '../components/PostPreview.astro';
 import siteConfig from '../data/site-config';
-import { sortItemsByDateDesc } from '../utils/data-utils';
-import WebsiteStructuredData from '../components/WebsiteStructuredData.astro';
-
-const posts = (await getCollection('blog')).sort(sortItemsByDateDesc).slice(0, 5);
 ---
 
-<BaseLayout 
-    title="SERPsecrets — SEO Analysis, Strategies & AI Insights"
-    description={siteConfig.description} 
-    image={siteConfig.image}
-    isHome={true}
->
-    <WebsiteStructuredData slot="structured-data" />
-    {
-        posts.length > 0 && (
-            <div class="mb-16 sm:mb-24">
-                <p class="mb-12 text-xl font-serif italic sm:mb-10 sm:text-2xl">What's New</p>
-                {posts.map((post) => (
-                    <PostPreview post={post} class="mb-10 sm:mb-12" headingLevel="h3" />
-                ))}
-                <div class="mt-12 sm:mt-16">
-                    <Button href="/blog">View All Posts</Button>
+<BaseLayout>
+    <Hero />
+
+    <section id="experience" class="w-full flex flex-col gap-8 mb-16 sm:mb-24">
+        <h2 class="text-2xl leading-tight font-serif font-medium sm:text-3xl sm:leading-tight text-[rgb(var(--color-text-main))]">Work Experience</h2>
+        
+        <div class="space-y-12">
+            <!-- NUR Digital Marketing -->
+            <div class="flex flex-col md:flex-row gap-4">
+                <div class="md:w-1/4">
+                    <p class="text-[rgb(var(--color-text-muted))] opacity-80">2022 – today</p>
+                </div>
+                <div class="md:w-3/4">
+                    <h3 class="text-xl font-medium mb-2 text-[rgb(var(--color-text-main))]">NUR Digital Marketing</h3>
+                    <p class="text-lg mb-2 text-[rgb(var(--color-text-muted))] opacity-80">SEO Specialist (Tech Lead)</p>
+                    <p class="text-[rgb(var(--color-text-main))]">I manage the SEO strategies (tech and content) of several clients, also do research and development regarding AI automation.</p>
                 </div>
             </div>
-        )
-    }
+
+            <!-- TeseCom -->
+            <div class="flex flex-col md:flex-row gap-4">
+                <div class="md:w-1/4">
+                    <p class="text-[rgb(var(--color-text-muted))] opacity-80">2020 – 2022</p>
+                </div>
+                <div class="md:w-3/4">
+                    <h3 class="text-xl font-medium mb-2 text-[rgb(var(--color-text-main))]">TeseCom – Digital Marketing Agency</h3>
+                    <p class="text-lg mb-2 text-[rgb(var(--color-text-muted))] opacity-80">SEO Specialist</p>
+                    <p class="text-[rgb(var(--color-text-main))]">I managed the operational and strategic side of the agency's SEO contracts.</p>
+                </div>
+            </div>
+
+            <!-- Brand-On -->
+            <div class="flex flex-col md:flex-row gap-4">
+                <div class="md:w-1/4">
+                    <p class="text-[rgb(var(--color-text-muted))] opacity-80">2019 – 2020</p>
+                </div>
+                <div class="md:w-3/4">
+                    <h3 class="text-xl font-medium mb-2 text-[rgb(var(--color-text-main))]">Brand-On Communication and Marketing Agency</h3>
+                    <p class="text-lg mb-2 text-[rgb(var(--color-text-muted))] opacity-80">SEO Specialist</p>
+                    <p class="text-[rgb(var(--color-text-main))]">I was in charge of the clients' SEO contracts, specifically for the SEO part for e-commerce.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="w-full flex flex-col gap-8 mb-16 sm:mb-24">
+        <h2 class="text-2xl leading-tight font-serif font-medium sm:text-3xl sm:leading-tight text-[rgb(var(--color-text-main))]">Education</h2>
+        
+        <div class="space-y-12">
+            <!-- Fondazione Italia USA -->
+            <div class="flex flex-col md:flex-row gap-4">
+                <div class="md:w-1/4">
+                    <p class="text-[rgb(var(--color-text-muted))] opacity-80">2021 – 2022</p>
+                </div>
+                <div class="md:w-3/4">
+                    <h3 class="text-xl font-medium mb-2 text-[rgb(var(--color-text-main))]">Fondazione Italia USA</h3>
+                    <p class="text-lg mb-2 text-[rgb(var(--color-text-muted))] opacity-80">Global Marketing, Communication & Made in Italy</p>
+                    <p class="text-[rgb(var(--color-text-main))]">Scholarship regarding the principles of global marketing and specifically the movement and export of Made in Italy goods.</p>
+                </div>
+            </div>
+
+            <!-- 24ORE Business School -->
+            <div class="flex flex-col md:flex-row gap-4">
+                <div class="md:w-1/4">
+                    <p class="text-[rgb(var(--color-text-muted))] opacity-80">2021</p>
+                </div>
+                <div class="md:w-3/4">
+                    <h3 class="text-xl font-medium mb-2 text-[rgb(var(--color-text-main))]">24ORE Business School</h3>
+                    <p class="text-lg mb-2 text-[rgb(var(--color-text-muted))] opacity-80">Data Analytics and Marketing Intelligence</p>
+                    <p class="text-[rgb(var(--color-text-main))]">I studied the strategies, methodologies and automations of advanced representation of large data sets.</p>
+                </div>
+            </div>
+
+            <!-- IED -->
+            <div class="flex flex-col md:flex-row gap-4">
+                <div class="md:w-1/4">
+                    <p class="text-[rgb(var(--color-text-muted))] opacity-80">2020 – 2021</p>
+                </div>
+                <div class="md:w-3/4">
+                    <h3 class="text-xl font-medium mb-2 text-[rgb(var(--color-text-main))]">IED Istituto Europeo di Design</h3>
+                    <p class="text-lg mb-2 text-[rgb(var(--color-text-muted))] opacity-80">E-commerce: Design and Management</p>
+                    <p class="text-[rgb(var(--color-text-main))]">I learned the advanced concepts of proper e-commerce management, with a focus on marketing aspects.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 </BaseLayout>

@@ -27,8 +27,8 @@ npm run preview    # Preview build
 
 ## Contributing
 
-- Issue reports: [GitHub Issues](https://github.com/your-username/serp-secrets/issues)
-- Content suggestions: [Contact Form](https://serp-secrets.com/contact)
+- Issue reports: [GitHub Issues](https://github.com/JustGoodUI/dante-astro-theme/issues)
+- Content suggestions: [Contact Form](https://www.filippodanesi.it/contact)
 
 ## License
 

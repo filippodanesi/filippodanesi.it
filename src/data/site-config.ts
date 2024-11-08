@@ -38,39 +38,24 @@ export type SiteConfig = {
     socialLinks?: Link[];
     hero?: Hero;
     subscribe?: Subscribe;
-    postsPerPage?: number;
-    projectsPerPage?: number;
-    tagDescriptions: TagDescription;
 };
 
 const siteConfig: SiteConfig = {
-    title: 'SERPsecrets',
-    subtitle: 'SEO Analysis, Strategies & AI Insights',
-    description: 'A personal take on SEO news, strategies, and AI insights. Practical analysis to help you optimize your online presence in a changing digital world.',
+    title: 'Filippo Danesi — Search Engine Optimization Expert',
+    subtitle: 'Senior SEO Strategist & AI Innovation Specialist',
+    description: 'SEO with over five years of experience in technical SEO and content strategy. Expertise in improving organic visibility and delivering data-driven results.',
     image: {
-        src: '/og-image.webp',
-        alt: 'SERPsecrets - SEO Analysis, Strategies & AI Insights'
+        src: '/profile.webp',
+        alt: 'Filippo Danesi - SEO Expert'
     },
     headerNavLinks: [
         {
-            text: 'Home',
-            href: '/'
-        },
-        {
-            text: 'Archive',
-            href: '/blog/'
-        },
-        {
-            text: 'Categories',
-            href: '/categories/'
-        },
-        {
-            text: 'About',
-            href: '/about/'
+            text: 'Blog',
+            href: '/blog'
         },
         {
             text: 'Contact',
-            href: '/contact/'
+            href: '/contact'
         }
     ],
     footerNavLinks: [
@@ -87,23 +72,52 @@ const siteConfig: SiteConfig = {
             href: 'https://x.com/filippodanesi'
         }
     ],
-    socialLinks: [],
+    socialLinks: [
+        {
+            text: 'LinkedIn',
+            href: 'https://www.linkedin.com/in/filippodanesi/'
+        },
+        {
+            text: 'GitHub',
+            href: 'https://github.com/filippodanesi/'
+        },
+        {
+            text: 'X/Twitter',
+            href: 'https://x.com/filippodanesi'
+        }
+    ],
     hero: {
-        actions: []
+        title: 'Filippo Danesi',
+        text: `
+I have a rich and dynamic career in the field of Search Engine Optimization, with a focus on organic growth and online visibility.
+
+With over five years of hands-on SEO experience, I specialize in both technical SEO and content strategy, consistently driving significant gains in organic visibility and measurable business outcomes.
+
+I've led successful site migrations, optimized website performance, and developed data-driven content strategies that seamlessly align with search engine algorithms and user intent. By closely collaborating with technical and marketing teams, I ensure the delivery of impactful, results-oriented campaigns.
+
+Committed to staying at the cutting edge of SEO trends and best practices, I'm focused on ensuring long-term growth and competitiveness for my clients.
+        `,
+        image: {
+            src: '/profile.webp',
+            alt: 'Filippo Danesi',
+        },
+        actions: [
+            {
+                text: "Check out my CV",
+                href: "/Filippo-Danesi_Resume.pdf",
+                className: "download-cv"
+            },
+            {
+                text: 'Visit my Blog',
+                href: '/blog'
+            }
+        ]
     },
     subscribe: {
-        title: 'Join the SERPsecrets Newsletter',
-        text: 'One update per week. All the latest posts directly in your inbox.',
+        title: 'Stay Updated',
+        text: 'Subscribe to my newsletter for SEO insights and updates.',
         formUrl: '#'
-    },
-    tagDescriptions: {
-        'technical-seo': 'Personal insights into backend SEO strategies and coding techniques that boost site performance and improve search rankings. I explore site architecture and technical optimization in detail.',
-        'seo-news': 'Authoritative updates and reflections on the latest SEO trends. I dive into algorithm changes, market shifts, and emerging practices in digital marketing.',
-        'seo-strategies': 'Personal insights into effective SEO tactics and winning methodologies, with a focus on keyword research, content optimization, and strategies to boost user engagement',
-        'artificial-intelligence': 'Exploring how AI is transforming SEO and digital marketing. I share insights into machine learning, algorithmic analysis, and AI-driven optimization strategies.'
-    },
-    postsPerPage: 8,
-    projectsPerPage: 8
+    }
 };
 
 export default siteConfig;
