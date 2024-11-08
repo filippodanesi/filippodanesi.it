@@ -1,18 +1,18 @@
-# SERP Secrets
+# Filippo Danesi
 
-A technical blog exploring the intersection of SEO and AI, focusing on data-driven strategies and practical implementations.
+Personal website of a Search Engine Optimization Expert with a focus on technical SEO and AI implementation.
 
-## Content Focus
+## Professional Focus
 
-- AI-powered SEO strategies
-- Technical SEO implementation
-- Machine learning in search
-- Algorithm analysis
-- Data-driven optimization
+- Technical SEO
+- Content Strategy
+- AI and ML in SEO
+- Data Analytics
+- E-commerce Optimization
 
 ## Technology
 
-Built with [Astro](https://astro.build/), [TypeScript](https://www.typescriptlang.org/), and [Tailwind CSS](https://tailwindcss.com/). Features responsive design, dark mode, and advanced search functionality.
+Built with [Astro](https://astro.build/), [TypeScript](https://www.typescriptlang.org/), and [Tailwind CSS](https://tailwindcss.com/). Features responsive design, dark mode, and optimized performance.
 
 And also [astro-cookieconsent](https://github.com/jop-software/astro-cookieconsent) for cookie management.
 
@@ -25,10 +25,17 @@ npm run build      # Production build
 npm run preview    # Preview build
 ```
 
-## Contributing
+## Experience
 
-- Issue reports: [GitHub Issues](https://github.com/JustGoodUI/dante-astro-theme/issues)
-- Content suggestions: [Contact Form](https://www.filippodanesi.it/contact)
+- Current: SEO Tech Lead at NUR Digital Marketing
+- Previous: SEO Specialist at TeseCom
+- Background: E-commerce SEO at Brand-On
+
+## Contact
+
+- LinkedIn: [Filippo Danesi](https://www.linkedin.com/in/filippodanesi/)
+- Blog: [SERP Secrets](https://serp-secrets.com)
+- Contact: [Get in Touch](https://www.filippodanesi.it/contact)
 
 ## License
 
@@ -41,4 +48,4 @@ Built with [Dante](https://justgoodui.com/), an Astro theme by [justgoodui.com](
 
 ---
 
-© 2024 SERP Secrets
+© 2024 Filippo Danesi
