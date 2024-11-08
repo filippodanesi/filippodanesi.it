@@ -1,0 +1,93 @@
+---
+import siteConfig from '../data/site-config';
+
+const contactPageStructuredData = {
+    '@context': 'https://schema.org',
+    '@type': 'ContactPage',
+    'url': new URL('contact', Astro.site).toString(),
+    'name': `Contact ${siteConfig.title}`,
+    'description': 'Get in touch with Filippo Danesi for SEO consultancy, technical insights, and collaboration opportunities.',
+    'dateModified': new Date().toISOString(),
+    'lastReviewed': new Date().toISOString(),
+    'reviewedBy': {
+        '@type': 'Person',
+        'name': 'Filippo Danesi'
+    },
+    'primaryImageOfPage': siteConfig.image ? {
+        '@type': 'ImageObject',
+        'url': new URL(siteConfig.image.src, Astro.site).toString(),
+        'caption': siteConfig.image.alt
+    } : undefined,
+    'mainEntity': {
+        '@type': 'Person',
+        '@id': `${Astro.site}#identity`,
+        'name': 'Filippo Danesi',
+        'jobTitle': 'Senior SEO Specialist',
+        'email': 'filippo.danesi93@gmail.com',
+        'telephone': '+39 392 241 8254',
+        'url': Astro.site?.toString(),
+        'sameAs': siteConfig.footerNavLinks?.map(link => link.href)
+    },
+    'mainContentOfPage': {
+        '@type': 'WebPageElement',
+        'isAccessibleForFree': true
+    },
+    'breadcrumb': {
+        '@type': 'BreadcrumbList',
+        'itemListElement': [
+            {
+                '@type': 'ListItem',
+                'position': 1,
+                'item': {
+                    '@id': Astro.site?.toString(),
+                    'name': 'Home'
+                }
+            },
+            {
+                '@type': 'ListItem',
+                'position': 2,
+                'item': {
+                    '@id': new URL('contact', Astro.site).toString(),
+                    'name': 'Contact'
+                }
+            }
+        ]
+    },
+    'specialty': {
+        '@type': 'Specialty',
+        'name': 'SEO Consulting',
+        'description': 'Technical SEO, Digital Marketing Strategy, and AI Integration'
+    },
+    'about': {
+        '@type': 'Thing',
+        'name': 'SEO Consulting Services',
+        'description': siteConfig.description
+    },
+    'potentialAction': {
+        '@type': 'CommunicateAction',
+        'target': {
+            '@type': 'EntryPoint',
+            'urlTemplate': 'mailto:filippo.danesi93@gmail.com',
+            'inLanguage': ['en', 'it']
+        },
+        'description': 'Contact for SEO consultancy and collaboration opportunities'
+    },
+    'inLanguage': 'en',
+    'isPartOf': {
+        '@type': 'WebSite',
+        '@id': Astro.site?.toString()
+    },
+    'publisher': {
+        '@type': 'Organization',
+        'name': siteConfig.title,
+        'description': siteConfig.description,
+        'logo': siteConfig.logo ? {
+            '@type': 'ImageObject',
+            'url': new URL(siteConfig.logo.src, Astro.site).toString(),
+            'caption': siteConfig.logo.alt
+        } : undefined
+    }
+};
+---
+
+<script type="application/ld+json" set:html={JSON.stringify(contactPageStructuredData)} />
