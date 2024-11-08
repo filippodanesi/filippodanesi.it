@@ -14,6 +14,8 @@ A technical blog exploring the intersection of SEO and AI, focusing on data-driv
 
 Built with [Astro](https://astro.build/), [TypeScript](https://www.typescriptlang.org/), and [Tailwind CSS](https://tailwindcss.com/). Features responsive design, dark mode, and advanced search functionality.
 
+And also [astro-cookieconsent](https://github.com/jop-software/astro-cookieconsent) for cookie management.
+
 ## Development
 
 ```bash
