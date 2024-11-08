@@ -1,4 +1,6 @@
 ---
+const currentYear = new Date().getFullYear();
+
 const personStructuredData = {
     '@context': 'https://schema.org',
     '@type': 'AboutPage',
@@ -43,27 +45,36 @@ const personStructuredData = {
         ],
         'alumniOf': [
             {
-                '@type': 'CollegeOrUniversity',
-                'name': 'Fondazione Italia USA',
-                'url': 'https://fondazioneitaliausa.org/',
-                'programName': 'MASt in Global Marketing, Comunicazione e Made in Italy',
-                'yearStarted': '2021',
-                'yearCompleted': '2022'
+                '@type': 'OrganizationRole',
+                'alumniOf': {
+                    '@type': 'CollegeOrUniversity',
+                    'name': 'Fondazione Italia USA',
+                    'url': 'https://fondazioneitaliausa.org/'
+                },
+                'roleName': 'MASt in Global Marketing, Comunicazione e Made in Italy',
+                'startDate': '2021',
+                'endDate': '2022'
             },
             {
-                '@type': 'CollegeOrUniversity',
-                'name': '24ORE Business School',
-                'url': 'https://www.24orebs.com/',
-                'programName': 'MASt in Big Data e Business Analytics',
-                'yearStarted': '2021'
+                '@type': 'OrganizationRole',
+                'alumniOf': {
+                    '@type': 'CollegeOrUniversity',
+                    'name': '24ORE Business School',
+                    'url': 'https://www.24orebs.com/'
+                },
+                'roleName': 'MASt in Big Data e Business Analytics',
+                'startDate': '2021'
             },
             {
-                '@type': 'CollegeOrUniversity',
-                'name': 'IED Istituto Europeo di Design',
-                'url': 'https://www.ied.edu/',
-                'programName': 'MASt in E-Commerce: Design and Management',
-                'yearStarted': '2020',
-                'yearCompleted': '2021'
+                '@type': 'OrganizationRole',
+                'alumniOf': {
+                    '@type': 'CollegeOrUniversity',
+                    'name': 'IED Istituto Europeo di Design',
+                    'url': 'https://www.ied.edu/'
+                },
+                'roleName': 'MASt in E-Commerce: Design and Management',
+                'startDate': '2020',
+                'endDate': '2021'
             }
         ],
         'hasCredential': [
