@@ -51,6 +51,10 @@ const siteConfig: SiteConfig = {
     },
     headerNavLinks: [
         {
+            text: 'Home',
+            href: '/'
+        },
+        {
             text: 'Blog',
             href: 'https://www.serp-secrets.com/',
             external: true
