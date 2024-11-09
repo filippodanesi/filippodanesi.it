@@ -7,7 +7,7 @@ const navLinks = siteConfig.footerNavLinks || [];
 <footer class="w-full max-w-3xl mx-auto pt-12 pb-10 sm:pt-24 sm:pb-14">
    {
        navLinks.length > 0 && (
-           <div class="mb-4 flex flex-wrap gap-x-6 gap-y-1 justify-between">
+           <div class="mb-4 flex flex-wrap gap-x-6 gap-y-6 sm:gap-y-1 justify-between">
                <div class="flex flex-wrap gap-x-6 gap-y-1">
                    {navLinks.map((link) => (
                        <a class="font-serif hover:underline hover:underline-offset-2" href={link.href}>
@@ -16,8 +16,8 @@ const navLinks = siteConfig.footerNavLinks || [];
                    ))}
                </div>
                <div class="flex flex-wrap gap-x-6 gap-y-1">
-                   <a class="font-serif hover:underline hover:underline-offset-2" href="/privacy-policy">Privacy Policy</a>
-                   <a class="font-serif hover:underline hover:underline-offset-2" href="/cookie-policy">Cookie Policy</a>
+                   <a class="font-serif hover:underline hover:underline-offset-2" href="/privacy-policy">Privacy</a>
+                   <a class="font-serif hover:underline hover:underline-offset-2" href="/cookie-policy">Cookie</a>
                </div>
            </div>
        )
@@ -33,7 +33,7 @@ const navLinks = siteConfig.footerNavLinks || [];
            </button>
        </div>
        <p class="text-sm">
-        &copy;{new Date().getFullYear()} {siteConfig.title}. All rights reserved.
-    </p>
+           &copy;{new Date().getFullYear()} {siteConfig.title}. All rights reserved.
+       </p>
    </div>
 </footer>
