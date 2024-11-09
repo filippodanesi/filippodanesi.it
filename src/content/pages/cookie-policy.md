@@ -2,11 +2,12 @@
 title: Cookie Policy
 seo:
   title: Cookie Policy
-  description: Get in touch through email or social media! Let me know how I can help.
+  description: Our Cookie Policy explains what cookies are and how we use them on our website.
 ---
+ 
+##### **Last Updated**: 09-Nov-2024
 
-**Effective Date**: 29-Jan-2024  
-**Last Updated**: 29-Jan-2024
+---
 
 ## What are cookies?
 
@@ -25,11 +26,16 @@ The third-party cookies used on our website mainly help us understand how the we
 #### Necessary
 Necessary cookies are required to enable the basic features of this site, such as providing secure log-in or adjusting your consent preferences. These cookies do not store any personally identifiable data.
 
+| Cookie/Storage | Type | Duration | Description |
+|----------------|------|----------|-------------|
+| `cc_cookie` | Cookie | 1 year | Stores your cookie consent preferences |
+| `theme` | localStorage | Persistent | Stores your theme preference (light/dark mode) |
+
 #### Analytics
 Analytical cookies are used to understand how visitors interact with the website. These cookies help provide information on metrics such as the number of visitors, bounce rate, traffic source, etc.
 
-| Cookie | Duration           | Description |
-|--------|---------------------|-------------|
+| Cookie | Duration | Description |
+|--------|----------|-------------|
 | `_ga_*` | 1 year 1 month 4 days | Google Analytics sets this cookie to store and count page views. |
 | `_ga` | 1 year 1 month 4 days | Google Analytics sets this cookie to calculate visitor, session, and campaign data and track site usage for the site's analytics report. The cookie stores information anonymously and assigns a randomly generated number to recognize unique visitors. |
 
@@ -44,4 +50,4 @@ In addition to this, different browsers provide different methods to block and d
 - [Firefox](https://support.mozilla.org/en-US/kb/clear-cookies-and-site-data-firefox?redirectslug=delete-cookies-remove-info-websites-stored&redirectlocale=en-US)
 - [Internet Explorer](https://support.microsoft.com/en-us/topic/how-to-delete-cookie-files-in-internet-explorer-bca9446f-d873-78de-77ba-d42645fa52fc)
 
-If you are using any other web browser, please visit your browser’s official support documents.
+If you are using any other web browser, please visit your browser's official support documents.
