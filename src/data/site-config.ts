@@ -46,7 +46,7 @@ const siteConfig: SiteConfig = {
     subtitle: 'Senior SEO Strategist & AI Innovation Specialist',
     description: 'SEO with over five years of experience in technical SEO and content strategy. Expertise in improving organic visibility and delivering data-driven results.',
     image: {
-        src: '/profile.webp',
+        src: '/og-image.jpg',
         alt: 'Filippo Danesi - SEO Expert'
     },
     headerNavLinks: [
