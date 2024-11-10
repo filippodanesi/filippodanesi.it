@@ -27,22 +27,10 @@ const socialIcons: Record<SocialNetwork, string> = {
     {/* Divider */}
     <div class="border-t border-solid border-main mb-8"></div>
 
-    {/* Bottom Section - Reorganized for mobile */}
-    <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-6 sm:gap-0">
-        {/* Copyright and Cookie Settings */}
-        <div class="flex flex-col sm:flex-row items-center sm:items-center gap-4 sm:gap-8">
-            <span class="text-sm">&copy;{currentYear} {siteConfig.title}</span>
-            <button
-                type="button"
-                data-cc="show-preferencesModal"
-                class="cky-banner-element inline-flex items-center justify-center px-6 py-2 font-serif text-sm leading-tight italic text-main bg-main border border-main rounded-full transition hover:bg-muted"
-            >
-                Cookie Settings
-            </button>
-        </div>
-
-        {/* Social Icons - Centered on mobile */}
-        <div class="flex items-center justify-center sm:justify-start gap-6">
+    {/* Mobile Order: Social Icons (centered) on top, Copyright and Cookie Settings below */}
+    <div class="flex flex-col gap-6 sm:flex-row sm:justify-between sm:items-center">
+        {/* Social Icons - Centered on mobile, right on desktop */}
+        <div class="order-first sm:order-last flex justify-center sm:justify-end gap-6">
             {siteConfig.socialLinks?.map((link) => (
                 <a 
                     href={link.href}
@@ -54,6 +42,18 @@ const socialIcons: Record<SocialNetwork, string> = {
                     <Fragment set:html={socialIcons[link.text as SocialNetwork]} />
                 </a>
             ))}
+        </div>
+
+        {/* Copyright and Cookie Settings - Below on mobile, left on desktop */}
+        <div class="order-last sm:order-first flex justify-between items-center w-full sm:w-auto gap-4">
+            <span class="text-sm">&copy;{currentYear} {siteConfig.title}</span>
+            <button
+                type="button"
+                data-cc="show-preferencesModal"
+                class="cky-banner-element inline-flex items-center justify-center px-6 py-2 font-serif text-sm leading-tight italic text-main bg-main border border-main rounded-full transition hover:bg-muted"
+            >
+                Cookie Settings
+            </button>
         </div>
     </div>
 </footer>
