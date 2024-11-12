@@ -66,8 +66,15 @@ function formatCanonicalURL(url: string | URL) {
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link
+    rel="preload"
     href="https://fonts.googleapis.com/css2?family=Inter:wght@400..700&family=Newsreader:ital,opsz,wght@0,6..72,400..700;1,6..72,400..700&display=swap"
+    as="style" 
+    crossorigin="anonymous"
+/>
+<link
     rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400..700&family=Newsreader:ital,opsz,wght@0,6..72,400..700;1,6..72,400..700&display=swap"
+    crossorigin="anonymous"
 />
 
 <!-- Google Analytics -->
@@ -76,7 +83,8 @@ function formatCanonicalURL(url: string | URL) {
     type="text/plain"
     data-category="analytics"
     data-service="Google Analytics"
-    src="https://www.googletagmanager.com/gtag/js?id=G-G5MCMEX52M">
+    src="https://www.googletagmanager.com/gtag/js?id=G-G5MCMEX52M"
+    crossorigin="anonymous">
 </script>
 
 <!-- GA Configuration -->
