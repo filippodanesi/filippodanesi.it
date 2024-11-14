@@ -12,6 +12,9 @@ export default defineConfig({
     isr: { expiration: 60 * 60 * 24 },
   }),
   trailingSlash: 'always',
+  redirects: {
+    '/contact-me/': '/contact/',
+  },
   integrations: [
     sitemap(),
     tailwind({ applyBaseStyles: false }),
@@ -126,13 +129,19 @@ export default defineConfig({
       },
 
       onFirstLoad: () => {
-        // Disable analytics by default
+        // Rimuovi script esistenti se presenti
+        const scripts = document.querySelectorAll('script[src*="googletagmanager.com"]');
+        scripts.forEach(script => script.remove());
         window['ga-disable-G-G5MCMEX52M'] = true;
       },
 
       onFirstConsent: ({cookie}) => {
         if(cookie.categories.includes('analytics')){
           console.log('Analytics accepted on first consent');
+          const script = document.createElement('script');
+          script.async = true;
+          script.src = `https://www.googletagmanager.com/gtag/js?id=G-G5MCMEX52M`;
+          document.head.appendChild(script);
           window['ga-disable-G-G5MCMEX52M'] = false;
         }
       },
@@ -140,8 +149,14 @@ export default defineConfig({
       onConsent: ({cookie}) => {
         if(CookieConsent.acceptedCategory('analytics')){
           console.log('Analytics active on page load');
+          const script = document.createElement('script');
+          script.async = true;
+          script.src = `https://www.googletagmanager.com/gtag/js?id=G-G5MCMEX52M`;
+          document.head.appendChild(script);
           window['ga-disable-G-G5MCMEX52M'] = false;
         } else {
+          const scripts = document.querySelectorAll('script[src*="googletagmanager.com"]');
+          scripts.forEach(script => script.remove());
           window['ga-disable-G-G5MCMEX52M'] = true;
         }
       },
@@ -152,8 +167,14 @@ export default defineConfig({
           
           if(isAnalyticsAccepted){
             console.log('Analytics category accepted');
+            const script = document.createElement('script');
+            script.async = true;
+            script.src = `https://www.googletagmanager.com/gtag/js?id=G-G5MCMEX52M`;
+            document.head.appendChild(script);
             window['ga-disable-G-G5MCMEX52M'] = false;
           } else {
+            const scripts = document.querySelectorAll('script[src*="googletagmanager.com"]');
+            scripts.forEach(script => script.remove());
             window['ga-disable-G-G5MCMEX52M'] = true;
           }
         }
@@ -161,8 +182,14 @@ export default defineConfig({
         if(changedServices && changedServices['analytics']?.includes('Google Analytics')){
           if(CookieConsent.acceptedService('Google Analytics', 'analytics')){
             console.log('Google Analytics service enabled');
+            const script = document.createElement('script');
+            script.async = true;
+            script.src = `https://www.googletagmanager.com/gtag/js?id=G-G5MCMEX52M`;
+            document.head.appendChild(script);
             window['ga-disable-G-G5MCMEX52M'] = false;
           } else {
+            const scripts = document.querySelectorAll('script[src*="googletagmanager.com"]');
+            scripts.forEach(script => script.remove());
             window['ga-disable-G-G5MCMEX52M'] = true;
           }
         }
