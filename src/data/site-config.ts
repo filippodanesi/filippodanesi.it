@@ -43,11 +43,11 @@ export type SiteConfig = {
 
 const siteConfig: SiteConfig = {
     title: 'Filippo Danesi',
-    subtitle: 'Senior SEO Strategist & AI Innovation Specialist',
+    subtitle: 'SEO Strategist & AI Innovation Specialist—sharing intriguing insights at SERP-Secrets.',
     description: 'SEO with over five years of experience in technical SEO and content strategy. Expertise in improving organic visibility and delivering data-driven results.',
     image: {
         src: '/og-image.jpg',
-        alt: 'Filippo Danesi - SEO Expert'
+        alt: 'Filippo Danesi - SEO Strategist & AI Innovation Specialist'
     },
     headerNavLinks: [
         {
