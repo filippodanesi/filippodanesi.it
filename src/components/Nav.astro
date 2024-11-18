@@ -1,32 +1,26 @@
 ---
 import NavLink from './NavLink.astro';
-import ThemeToggle from './ThemeToggle.astro';
+import ThemeToggle from './ThemeToggle.astro'; 
 import siteConfig from '../data/site-config';
 
 const navLinks = siteConfig.headerNavLinks || [];
 ---
 
 <nav class="min-h-10 pt-4 pb-12 relative sm:min-h-14 sm:pb-24 md:pt-8">
-    <div class="absolute right-12 top-4 md:right-0 md:top-8 z-10">
-        <ThemeToggle />
-    </div>
-
+    <!-- Mobile Navigation -->
     <div class="md:hidden w-full max-w-3xl mx-auto relative">
         <div class="flex justify-between items-center">
             <a href="/" class="flex items-center hover:opacity-80" aria-label="Go to homepage">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 192 192" class="w-7 h-7">
-                    <path
-                        d="M99.6 23.1h-7v144.3h7V23.1zM168.8 91.8H23.4v7h145.4v-7zM47.2 41.7l-5 5L145 148.8l5-5zM145 41.7L42.2 143.8l5 4.9L150 46.7zM30.1 64.8l-2.6 6.5l134.6 54.5l2.7-6.5zM120.3 27.1L65.4 160.8l6.5 2.6l54.9-133.7zM162.3 65l-134.9 54l2.6 6.5l134.9-54zM72.2 27l-6.5 2.6l54.2 134l6.5-2.6z"
-                    ></path>
+                    <path d="M99.6 23.1h-7v144.3h7V23.1zM168.8 91.8H23.4v7h145.4v-7zM47.2 41.7l-5 5L145 148.8l5-5zM145 41.7L42.2 143.8l5 4.9L150 46.7zM30.1 64.8l-2.6 6.5l134.6 54.5l2.7-6.5zM120.3 27.1L65.4 160.8l6.5 2.6l54.9-133.7zM162.3 65l-134.9 54l2.6 6.5l134.9-54zM72.2 27l-6.5 2.6l54.2 134l6.5-2.6z"></path>
                     <style>
-                        path {
-                            fill: rgb(var(--color-text-main));
-                        }
+                        path { fill: rgb(var(--color-text-main)); }
                     </style>
                 </svg>
             </a>
 
-            <div class="flex items-center">
+            <div class="flex items-center gap-4">
+                <ThemeToggle />
                 {
                     navLinks.length > 0 && (
                         <button
@@ -61,26 +55,41 @@ const navLinks = siteConfig.headerNavLinks || [];
         }
     </div>
 
+    <!-- Desktop Navigation -->
     <div class="hidden md:block">
-        {
-            navLinks.length > 0 && (
-                <div class="w-full max-w-3xl mx-auto relative">
-                    <ul class="flex gap-6">
-                        {navLinks.map((link) => (
-                            <li class="py-1">
-                                <NavLink
-                                    class="text-xl font-serif text-main hover:underline hover:underline-offset-2 hover:decoration-1 md:text-base"
-                                    href={link.href}
-                                    external={link.external}
-                                >
-                                    {link.text}
-                                </NavLink>
-                            </li>
-                        ))}
-                    </ul>
-                </div>
-            )
-        }
+        <!-- Logo -->
+        <a href="/" class="absolute left-0 top-8 hover:opacity-80" aria-label="Go to homepage">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 192 192" class="w-7 h-7">
+                <path d="M99.6 23.1h-7v144.3h7V23.1zM168.8 91.8H23.4v7h145.4v-7zM47.2 41.7l-5 5L145 148.8l5-5zM145 41.7L42.2 143.8l5 4.9L150 46.7zM30.1 64.8l-2.6 6.5l134.6 54.5l2.7-6.5zM120.3 27.1L65.4 160.8l6.5 2.6l54.9-133.7zM162.3 65l-134.9 54l2.6 6.5l134.9-54zM72.2 27l-6.5 2.6l54.2 134l6.5-2.6z"></path>
+                <style>
+                    path { fill: rgb(var(--color-text-main)); }
+                </style>
+            </svg>
+        </a>
+
+        <!-- Theme Toggle -->
+        <div class="absolute right-0 top-8 z-10">
+            <ThemeToggle />
+        </div>
+
+        <!-- Menu -->
+        {navLinks.length > 0 && (
+            <div class="max-w-3xl mx-auto">
+                <ul class="flex gap-6 items-center justify-center">
+                    {navLinks.map((link) => (
+                        <li class="py-1">
+                            <NavLink
+                                class="text-xl font-serif text-main hover:underline hover:underline-offset-2 hover:decoration-1 md:text-base"
+                                href={link.href}
+                                external={link.external}
+                            >
+                                {link.text}
+                            </NavLink>
+                        </li>
+                    ))}
+                </ul>
+            </div>
+        )}
     </div>
 </nav>
 
@@ -132,17 +141,23 @@ const navLinks = siteConfig.headerNavLinks || [];
 </style>
 
 <script>
-    function menuToggle() {
+    const menuToggle = () => {
         const menu = document.querySelector('.menu');
         const menuToggleBtn = document.querySelector('.menu-toggle');
-        menuToggleBtn?.addEventListener('click', () => {
+        
+        if (!menu || !menuToggleBtn) return;
+        
+        const handleClick = () => {
             const isMenuExpanded = menuToggleBtn.getAttribute('aria-expanded') === 'true';
             menuToggleBtn.classList.toggle('is-active');
             menuToggleBtn.setAttribute('aria-expanded', isMenuExpanded ? 'false' : 'true');
             menuToggleBtn.setAttribute('aria-label', isMenuExpanded ? 'Open Menu' : 'Close Menu');
-            menu?.classList.toggle('is-visible');
-        });
-    }
+            menu.classList.toggle('is-visible');
+        };
+
+        menuToggleBtn.addEventListener('click', handleClick);
+    };
+
     menuToggle();
     document.addEventListener('astro:after-swap', menuToggle);
 </script>
