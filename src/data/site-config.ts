@@ -95,13 +95,11 @@ const siteConfig: SiteConfig = {
     hero: {
         title: 'Filippo Danesi',
         text: `
-I have a rich and dynamic career in the field of Search Engine Optimization, with a focus on organic growth and online visibility.
-
-With over five years of hands-on SEO experience, I specialize in both technical SEO and content strategy, consistently driving significant gains in organic visibility and measurable business outcomes.
-
-I've led successful site migrations, optimized website performance, and developed data-driven content strategies that seamlessly align with search engine algorithms and user intent. By closely collaborating with technical and marketing teams, I ensure the delivery of impactful, results-oriented campaigns.
-
-Committed to staying at the cutting edge of SEO trends and best practices, I'm focused on ensuring long-term growth and competitiveness for my clients.
+ SEO is my passion, but data and innovation drive my approach.
+ 
+ I develop data-driven SEO strategies enhanced by AI and machine learning applications. With five years of experience across B2B and B2C markets, I implement advanced technical solutions from domain migrations to content optimization systems. My approach combines proven SEO practices with NLP-powered analytics, ensuring organic growth through precise search intent mapping.
+ 
+ I work at the intersection of engineering and search optimization, developing scalable solutions that align with evolving search algorithms. By integrating traditional SEO expertise with AI innovation, I deliver strategies that adapt to technological shifts while maintaining consistent organic performance.
         `,
         image: {
             src: '/profile.webp',
