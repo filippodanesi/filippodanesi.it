@@ -102,7 +102,7 @@ const siteConfig: SiteConfig = {
  I work at the intersection of engineering and search optimization, developing scalable solutions that align with evolving search algorithms. By integrating traditional SEO expertise with AI innovation, I deliver strategies that adapt to technological shifts while maintaining consistent organic performance.
         `,
         image: {
-            src: '/profile.webp',
+            src: '/filippo.png',
             alt: 'Filippo Danesi',
         },
         actions: [
