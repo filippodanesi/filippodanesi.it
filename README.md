@@ -26,7 +26,7 @@ Currently SEO Tech Lead at NUR Digital Marketing, previously leading technical S
 ## Connect
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-171717?style=for-the-badge&logo=linkedin&logoColor=F2F1EC)](https://www.linkedin.com/in/filippodanesi/)
-[![Blog](https://img.shields.io/badge/Blog-171717?style=for-the-badge&logo=blogger&logoColor=F2F1EC)](https://serp-secrets.com)
+[![Blog](https://img.shields.io/badge/Blog-171717?style=for-the-badge&logo=blogger&logoColor=F2F1EC)](https://www.serp-secrets.com)
 [![Website](https://img.shields.io/badge/Website-171717?style=for-the-badge&logo=google-chrome&logoColor=F2F1EC)](https://www.filippodanesi.it/contact)
 
 ## License
@@ -35,5 +35,7 @@ Currently SEO Tech Lead at NUR Digital Marketing, previously leading technical S
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-171717?style=for-the-badge&logoColor=F2F1EC)](https://www.gnu.org/licenses/gpl-3.0)
 
 Built with [Dante](https://justgoodui.com/), an Astro theme by JustGoodUI. Content licensed under CC BY 4.0, theme under GPL-3.0.
+
+---
 
 © 2024 Filippo Danesi
