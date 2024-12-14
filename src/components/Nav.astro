@@ -57,23 +57,39 @@ const navLinks = siteConfig.headerNavLinks || [];
    </div>
 
    <div class="hidden md:block">
-       {navLinks.length > 0 && (
-           <div class="w-full max-w-3xl mx-auto relative">
-               <ul class="flex gap-6">
-                   {navLinks.map((link) => (
-                       <li class="py-1">
-                           <NavLink
-                               class="text-xl font-serif text-main hover:underline hover:underline-offset-2 hover:decoration-1 md:text-base"
-                               href={link.href}
-                           >
-                               {link.text}
-                           </NavLink>
-                       </li>
-                   ))}
-               </ul>
-           </div>
-       )}
-   </div>
+    <!-- Logo -->
+    <a href="/" class="absolute left-0 top-8 hover:opacity-80 transition-opacity" aria-label="Go to homepage">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 192 192" class="w-7 h-7">
+            <path d="M99.6 23.1h-7v144.3h7V23.1zM168.8 91.8H23.4v7h145.4v-7zM47.2 41.7l-5 5L145 148.8l5-5zM145 41.7L42.2 143.8l5 4.9L150 46.7zM30.1 64.8l-2.6 6.5l134.6 54.5l2.7-6.5zM120.3 27.1L65.4 160.8l6.5 2.6l54.9-133.7zM162.3 65l-134.9 54l2.6 6.5l134.9-54zM72.2 27l-6.5 2.6l54.2 134l6.5-2.6z"></path>
+            <style>
+                path { fill: rgb(var(--color-text-main)); }
+            </style>
+        </svg>
+    </a>
+
+    <!-- Menu centrato -->
+    {navLinks.length > 0 && (
+        <div class="max-w-3xl mx-auto">
+            <ul class="flex gap-6 items-center justify-center">
+                {navLinks.map((link) => (
+                    <li class="py-1">
+                        <NavLink
+                            class="text-xl font-serif text-main hover:underline hover:underline-offset-2 hover:decoration-1 md:text-base"
+                            href={link.href}
+                        >
+                            {link.text}
+                        </NavLink>
+                    </li>
+                ))}
+            </ul>
+        </div>
+    )}
+
+    <!-- Theme Toggle a destra -->
+    <div class="absolute right-0 top-8 z-10">
+        <ThemeToggle />
+    </div>
+</div>
 </nav>
 
 <style>
