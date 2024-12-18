@@ -6,11 +6,20 @@
 [![TypeScript](https://img.shields.io/badge/TypeScript-171717?style=for-the-badge&logo=typescript&logoColor=F2F1EC)](https://www.typescriptlang.org/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-171717?style=for-the-badge&logo=tailwind-css&logoColor=F2F1EC)](https://tailwindcss.com/)
 
-Personal website and portfolio of Filippo Danesi, SEO Tech Lead specializing in technical SEO, content strategy, and AI implementation for enterprise-level search optimization.
+Personal website and portfolio of Filippo Danesi, SEO Tech Lead with expertise in Technical SEO, Content Strategy and AI Implementation for enterprise search optimization.
 
 ## Stack
 
-The site is built using Astro for static site generation, TypeScript for type-safe development, and Tailwind CSS for styling. Features include dark mode support, responsive design, and [astro-cookieconsent](https://github.com/jop-software/astro-cookieconsent) for GDPR compliance.
+## Stack
+
+- [Astro](https://astro.build) v4.5 - Static site generation
+- [TypeScript](https://www.typescriptlang.org/) - Type-safe development 
+- [Tailwind CSS](https://tailwindcss.com/) v3.4 - Styling
+- [MDX](https://mdxjs.com/) v2.2 - Advanced content authoring
+- [Marked](https://marked.js.org/) v12.0 - Markdown processing
+- [Sharp](https://sharp.pixelplumbing.com/) v0.33 - Image optimization
+- [astro-cookieconsent](https://github.com/jop-software/astro-cookieconsent) - Privacy compliance
+- [Vercel](https://vercel.com) - Deployment and analytics
 
 ## Development
 
