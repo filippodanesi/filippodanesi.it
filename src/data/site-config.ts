@@ -98,8 +98,8 @@ Today, I blend traditional SEO wisdom with cutting-edge AI tools, not because it
 What truly excites me is exploring the intersection of engineering and search optimization. I love diving deep into data, experimenting with new technologies, and building solutions that not only work today but are ready for tomorrow's challenges. Every project is an opportunity to push boundaries and transform raw data into meaningful growth strategies.
         `,
         image: {
-            src: '',
-            alt: 'Filippo Danesi',
+            src: '/jason-leung-7aukRRZb5o0-unsplash.jpg',
+            alt: 'A close up of a blue and white background',
         },
         actions: [
             {
