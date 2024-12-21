@@ -13,7 +13,7 @@ export type Props = HeadProps & { showHeader?: boolean };
 const { showHeader = true, ...head } = Astro.props;
 
 const pathname = Astro.url.pathname;
-const isHomePage = pathname === '/' || pathname === ''; // aggiungi questa riga
+const isHomePage = pathname === '/' || pathname === '';
 const isAboutPage = pathname === '/about' || pathname === '/about/';
 const isContactPage = pathname === '/contact' || pathname === '/contact/';
 ---
