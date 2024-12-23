@@ -41,7 +41,7 @@ const siteConfig: SiteConfig = {
     description: 'SEO with over five years of experience in technical SEO and content strategy. Expertise in improving organic visibility and delivering data-driven results.',
     image: {
         src: '/og-image.jpg',
-        alt: 'Filippo Danesi - SEO Strategist, AI Specialist'
+        alt: 'Filippo Danesi \\ SEO Strategist, AI Specialist'
     },
     headerNavLinks: [
         {
