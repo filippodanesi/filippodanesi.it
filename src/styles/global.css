@@ -21,7 +21,7 @@
 
 /* Custom styles */
 
-blockquote {
+.blockquote {
     border-left: 4px solid rgb(var(--color-border-main) / 0.6);
     padding-left: 1rem;
     margin-left: 0;
