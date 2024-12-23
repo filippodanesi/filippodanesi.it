@@ -22,9 +22,9 @@ const isHome = pathname === '/';
 
 // Logica del titolo per homepage e altre pagine
 const title = isHome 
-    ? "Filippo Danesi \ SEO Strategist, AI Specialist"
+    ? "Filippo Danesi &#92; SEO Strategist, AI Specialist"
     : Astro.props.title 
-        ? `${Astro.props.title} \ Filippo Danesi` 
+        ? `${Astro.props.title} &#92; Filippo Danesi` 
         : siteConfig.title;
 
 // Logica della description per homepage e altre pagine
