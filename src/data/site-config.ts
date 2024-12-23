@@ -88,7 +88,7 @@ const siteConfig: SiteConfig = {
     ],
 hero: {
     title: 'Filippo Danesi',
-    text: `> SEO is my passion, driven by data and innovation.
+    text: `> _SEO is my passion, driven by data and innovation._
 
 My journey in SEO began with a fascination for data and a desire to bridge the gap between technology and user experience. What started as curiosity evolved into a five-year adventure across different markets and challenges, each one teaching me something new about the ever-evolving world of search.
 
