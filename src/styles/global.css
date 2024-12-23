@@ -21,10 +21,10 @@
 
 /* Custom styles */
 
-.blockquote {
-    border-left: 4px solid rgb(var(--color-border-main) / 0.6);
-    padding-left: 1rem;
-    margin-left: 0;
+blockquote {
+    border-left: 4px solid rgba(var(--color-border-main) / 0.6) !important;
+    padding-left: 1rem !important;
+    margin-left: 0 !important;
 }
 
 .prose-dante :where(h1, h2, h3, h4, h5, h6):not(:where([class~="not-prose"], [class~="not-prose"] *)) {
