@@ -5,8 +5,6 @@ import Header from '../components/Header.astro';
 import Nav from '../components/Nav.astro';
 import AboutStructuredData from '../components/AboutStructuredData.astro';
 import ContactPageStructuredData from '../components/ContactPageStructuredData.astro';
-import Analytics from '../components/Analytics.astro';
-import '../styles/cookieconsent-style.css';
 
 export type Props = HeadProps & { showHeader?: boolean };
 
@@ -38,7 +36,6 @@ const isContactPage = pathname === '/contact' || pathname === '/contact/';
             {showHeader && <Header />}
             <main class="grow w-full max-w-3xl mx-auto">
                 <slot />
-                <Analytics />
             </main>
             <Footer />
         </div>
