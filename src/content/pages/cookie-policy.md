@@ -6,8 +6,6 @@ seo:
   description: Our Cookie Policy explains what cookies are and how we use them on our website.
 ---
 
-<h2 class="mb-12 text-[rgb(var(--color-text-main))] font-sans font-normal sm:mb-14 text-sm sm:text-base leading-normal pb-6 border-b border-solid border-main">Last Updated: 22-Feb-2025</h2>
-
 ## What are cookies?
 
 This Cookie Policy explains what cookies are and how we use them, the types of cookies we use (i.e., the information we collect using cookies and how that information is used), and how to manage the cookie settings.
@@ -51,3 +49,4 @@ In addition to this, different browsers provide different methods to block and d
 
 If you are using any other web browser, please visit your browser's official support documents.
 
+<p class="text-sm text-[rgb(var(--color-text-muted)_/_0.6)]">(Last Updated: 22-Feb-2025)</p>
