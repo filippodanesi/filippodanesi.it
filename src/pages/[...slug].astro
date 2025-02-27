@@ -1,17 +1,17 @@
 ---
 import { type CollectionEntry, getCollection } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro';
-// Import collections and layout components
 
 export const prerender = true;
 
-// Generate static paths for all pages in the 'pages' collection
 export async function getStaticPaths() {
     const pages = await getCollection('pages');
-    return pages.map((page) => ({
-        params: { slug: page.slug },
-        props: { page }
-    }));
+    return pages.map((page) => {
+        return {
+            params: { slug: page.slug },
+            props: { page }
+        };
+    });
 }
 
 type Props = { page: CollectionEntry<'pages'> };
@@ -22,19 +22,17 @@ const { Content } = await page.render();
 ---
 
 <BaseLayout title={seo?.title ?? title} description={seo?.description} image={seo?.image} showHeader={false}>
-    <article class="mb-10 sm:mb-16">
-        <!-- Page Header -->
-        <header class="mb-6">
-            <h1 class="text-2xl leading-tight font-serif sm:text-3xl italic mb-3 sm:leading-tight">{title}</h1>
+    <article class="mb-16 sm:mb-24">
+        <header class="mb-8">
+            <h1 class="text-3xl leading-tight font-serif sm:text-4xl italic mb-4 sm:leading-tight">{title}</h1>
             {
                 seo?.description && page.slug !== 'home' && (
-                    <h2 class="mb-8 text-[rgb(var(--color-text-secondary))] sm:mb-10 text-xs sm:text-sm leading-normal pb-4 border-b border-solid border-main w-full">
+                    <h2 class="mb-12 text-[rgb(var(--color-text-secondary))] sm:mb-14 text-sm sm:text-base leading-normal pb-6 border-b border-solid border-main w-full">
                         {seo.description}
                     </h2>
                 )
             }
         </header>
-        <!-- Page Content -->
         <div class="max-w-none prose prose-dante sm:prose-lg">
             <Content />
         </div>
