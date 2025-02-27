@@ -18,7 +18,6 @@ Personal website and portfolio of Filippo Danesi, SEO Tech Lead with expertise i
 - [MDX](https://mdxjs.com/) v2.2 - Advanced content authoring
 - [Marked](https://marked.js.org/) v12.0 - Markdown processing
 - [Sharp](https://sharp.pixelplumbing.com/) v0.33 - Image optimization
-- [astro-cookieconsent](https://github.com/jop-software/astro-cookieconsent) - Privacy compliance
 - [Vercel](https://vercel.com) - Deployment and analytics
 
 ## Development
