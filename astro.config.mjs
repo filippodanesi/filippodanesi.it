@@ -5,7 +5,7 @@ import tailwind from '@astrojs/tailwind';
 import rehypeExternalLinks from 'rehype-external-links';
 
 export default defineConfig({
-  site: 'https://www.filippodanesi.it',
+  site: 'https://www.filippodanesi.com',
   output: 'server',
   adapter: vercel({
     isr: { expiration: 60 * 60 * 24 },

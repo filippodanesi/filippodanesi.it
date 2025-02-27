@@ -1,4 +1,4 @@
-![Cover Image](https://github.com/filippodanesi/filippodanesi.it/blob/main/public/326shots_so.png)
+![Cover Image](https://github.com/filippodanesi/filippodanesi.com/blob/main/public/326shots_so.png)
 
 # Filippo Danesi
 
@@ -37,7 +37,7 @@ Currently SEO Tech Lead at NUR Digital Marketing, previously leading technical S
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-171717?style=for-the-badge&logo=linkedin&logoColor=F2F1EC)](https://www.linkedin.com/in/filippodanesi/)
 [![Blog](https://img.shields.io/badge/Blog-171717?style=for-the-badge&logo=blogger&logoColor=F2F1EC)](https://www.serp-secrets.com)
-[![Website](https://img.shields.io/badge/Website-171717?style=for-the-badge&logo=google-chrome&logoColor=F2F1EC)](https://www.filippodanesi.it/contact)
+[![Website](https://img.shields.io/badge/Website-171717?style=for-the-badge&logo=google-chrome&logoColor=F2F1EC)](https://www.filippodanesi.com/contact)
 
 ## License
 

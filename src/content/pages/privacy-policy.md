@@ -7,7 +7,7 @@ seo:
 
 ## Who we are
 
-Our website address is: https://www.filippodanesi.it/
+Our website address is: https://www.filippodanesi.com/
 
 ## What personal data we collect and why we collect it
 
@@ -44,7 +44,7 @@ Under the General Data Protection Regulation (GDPR), you have several rights reg
 - The right to object
 - Rights in relation to automated decision making and profiling
 
-To exercise any of these rights, please contact us at [privacy@filippodanesi.it](mailto:privacy@filippodanesi.it).
+To exercise any of these rights, please contact us at [privacy@filippodanesi.com](mailto:privacy@filippodanesi.com).
 
 ## How we protect your data
 
@@ -56,6 +56,6 @@ We may update this privacy policy from time to time to reflect changes to our pr
 
 ## Contact information
 
-For any questions or concerns about our privacy policy or your personal data, please contact us at [privacy@filippodanesi.it](mailto:privacy@filippodanesi.it).
+For any questions or concerns about our privacy policy or your personal data, please contact us at [privacy@filippodanesi.com](mailto:privacy@filippodanesi.com).
 
 <p class="text-sm text-[rgb(var(--color-text-muted)_/_0.6)]">(Last Updated: 22-Feb-2025)</p>
